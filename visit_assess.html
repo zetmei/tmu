@@ -1,0 +1,1141 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>北醫賃居資訊服務網</title>
+
+<!--CSS
+================================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/all.css">
+
+  <link rel="stylesheet" href="css/database/foundation-datepicker.min.css">
+
+<!--IE8支援支援HTML5
+================================================== -->
+<!--[if lt IE 9]>
+<script src="js/vendor/html5shiv.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+<![endif]-->
+
+<!--JS
+================================================== -->
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" ></script>  
+  <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/foundation.min.js"></script> 
+  <script src="js/layout.js"></script> 
+  <script src="js/page.js"></script> 
+</head>
+<body>
+<header class="header"> 
+<div class="header-top">   
+    <div class="row">
+      <div class="large-12 columns">
+          <!-- side選單 -->
+          <ul class="nav-second inline-list">
+            <li class="sign-in"><a href="javascript:;" data-reveal-id="myModal">登入<i class="fa fa-sign-in icon_font"></i></a></li>
+            <li><a href="../en/index.html">English</a></li>            
+            <li><a href="site_map.html">網站地圖</a></li>
+            <li><a target="_blank" href="http://www.tmu.edu.tw/v3/main.php">臺北醫學大學</a></li>
+          </ul>
+      </div>
+    </div>
+</div>
+
+<!-- 光箱-登入 -->
+<div id="myModal" class="reveal-modal full reveal-modal-login" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div class="modal-login">
+        <div class="row small-collaps">
+            <div class="medium-12 columns">
+                <h3 class="title-modal title-05">登入                    
+                </h3>
+
+                <input type="text" placeholder="帳號">
+                <input type="text" placeholder="密碼">
+
+                <div class="row check_code">
+                    <div class="small-5 columns">
+                         <input class="inline" type="text" placeholder="驗證碼">
+                    </div>
+                    <div class="small-5 columns">
+                         <img class="inline" src="images/icon/check_code.png">
+                    </div>
+                    <div class="small-2 columns">
+                         <a href="javascript:;"><i class="fa fa-refresh"></i></a>
+                    </div>
+                </div>
+
+                <a class="button btn-full" href="newslist.html">登入</a>
+
+                <div class="align-center text-center">或</div>
+
+                <a class="button btn-full btn-red" href="newslist.html">
+                <i class="fa fa-google-plus"></i>
+                使用Google帳號登入</a>
+
+                <!-- <hr class="hr_opacity"> -->
+                
+                <div class="align-center text-center bottom_txt">
+                    <a href="javascript:;">申請房東帳號</a>
+                    <a href="javascript:;">忘記密碼</a>
+                </div>
+
+
+            </div>
+            <div class="medium-12 columns">
+            </div>
+        </div>
+    </div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div class="header-bottom">   
+    <div class="row collapse">
+      <div class="large-12 columns">
+         <!-- logo -->
+         <div class="logo"><a href="index.html"></a></div>
+         <!-- icon主選單 -->
+        <div class="nav-primary icon-bar five-up show-for-large-up">
+          <a class="item" href="news_list.html">
+            <i class="fa fa-bullhorn icon_font"></i>
+            <label>最新消息</label>
+          </a>
+          <a class="item" href="rent_list.html">
+            <i class="fa fa-home icon_font"></i>
+            <label>租賃物件</label>
+          </a>
+          <a class="item" target="_blank" href="http://my2.tmu.edu.tw/site/houseservice">
+            <i class="fa fa-comment icon_font"></i>
+            <label>討論區</label>
+          </a>
+          <a class="item active" href="visit_list.html">
+            <i class="fa fa-key icon_font"></i>
+            <label>訪視行程</label>
+          </a>
+          <a class="item" href="visit_list_tutor.html">
+            <i class="fa fa-book icon_font"></i>
+            <label>導師專區</label>
+          </a>
+          <a class="item" href="visit_record.html">
+            <i class="fa fa-folder-open icon_font"></i>
+            <label>我的資料</label>
+          </a>
+          <a class="item" href="contact_us.html">
+            <i class="fa fa-paper-plane icon_font"></i>
+            <label>聯絡我們</label>
+          </a>
+        </div>
+
+        <!-- 手機menu icon -->
+        <a href="javascript:;" class="menu-icon hide-for-large-up">Menu</a>
+        
+
+
+      </div>
+    </div>
+</div>
+</header>
+
+<!-- 手機主選單 -->
+        <div class="nav-mobile">
+          <a class="item" href="news_list.html">最新消息
+          </a>
+          <a class="item" href="rent_list.html">租賃物件
+          </a>
+          <a class="item" target="_blank" href="http://my2.tmu.edu.tw/site/houseservice">討論區
+          </a>
+          <a class="item" href="visit_list.html">訪視行程
+          </a>
+          <a class="item" href="visit_list_tutor.html">導師專區
+          </a>
+          <a class="item" href="visit_record.html">我的資料
+          </a>
+          <a class="item" href="contact_us.html">聯絡我們
+          </a>
+        </div>
+
+
+ 
+<!-- 主視覺 -->
+<div class="mainvision show-for-large-up">        
+        <img class="img-responsive" data-interchange="[images/banner/inside01.png,(default)], [images/banner/banner01_600w.png,(small)], [images/banner/banner01_600w.png,(medium)], [images/banner/inside01.png,(large)]">    
+</div>
+
+<!-- 每頁內容置換 -->
+<div class="contain visit_pages"> 
+
+  <!-- 內頁標題 -->
+  <div class="row">     
+      <div class="small-12 columns">
+          <h3 class="title-page title-10">填寫訪視評核              
+          </h3>
+          
+      </div>
+  </div>
+
+  <div class="row form-inline">
+    <div class="medium-12 large-12 columns">
+
+          <div class="row collapse">
+              <div class="medium-12 columns">
+                <h4>臺北醫學大學校外賃居訪視暨安全評核紀錄表：</h4>
+                <p>本室為了解學生在外賃居情形，懇請您訪視時花幾分鐘的時間，填寫這份紀錄表，系統將彙整並予以統計處理。謝謝您的合作</p>
+              </div>
+          </div>
+
+          <div class="row collapse">
+              <div class="medium-1 columns">
+                <span class="label_txt"><strong>訪視時間：</strong></span>
+              </div>
+              <div class="medium-10 columns end">
+                <span class="label_txt">2015 年 7 月 23 日 12:00 ~ 12:30</span>
+              </div>
+          </div>
+          
+          <div class="row collapse">   
+              <div class="medium-1 columns">
+                <span class="label_txt"><strong>訪視方式：</strong></span>
+              </div> 
+     
+              <div class="medium-10 columns end">
+                <span class="label_txt">
+                    <input type="radio" name="pokemon" value="Red" id="method1">
+                    <label for="method1">實地訪視</label>
+                    <input type="radio" name="pokemon" value="Red" id="method2">
+                    <label for="method2">電話訪視</label>
+                    <input type="radio" name="pokemon" value="Red" id="method3">
+                    <label for="method3">面談</label>
+              </span>
+            </div>
+
+            </div>
+
+           <div class="row collapse">
+              <div class="medium-12 columns">
+               <h5 class="f-title">一、圖片上傳</h5>
+               <p>上傳照片：*最多上傳4張照片，尺寸x單一檔案10mb以下</p>
+               </div>
+          </div>
+
+                <div class="row collapse">
+                  <div class="medium-2 columns">
+                      <label for="fileField"></label>
+                      <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                  </div>
+                   <div class="medium-2 columns end">
+                      <input id="checkbox1" type="checkbox">
+                      <label for="checkbox1">刪除</label>
+                  </div>
+                </div>
+                <div class="row collapse">
+                  <div class="medium-2 columns">
+                      <label for="fileField"></label>
+                      <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                  </div>
+                   <div class="medium-2 columns end">
+                      <input id="checkbox2" type="checkbox">
+                      <label for="checkbox2">刪除</label>
+                  </div>
+                </div>
+                <div class="row collapse">
+                  <div class="medium-2 columns">
+                      <label for="fileField"></label>
+                      <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                  </div>
+                   <div class="medium-2 columns end">
+                      <input id="checkbox3" type="checkbox">
+                      <label for="checkbox3">刪除</label>
+                  </div>
+                </div>
+                <div class="row collapse">
+                  <div class="medium-2 columns">
+                      <label for="fileField"></label>
+                      <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                  </div>
+                   <div class="medium-2 columns end">
+                      <input id="checkbox4" type="checkbox">
+                      <label for="checkbox4">刪除</label>
+                  </div>
+                </div>
+
+           <div class="row collapse">
+              <div class="medium-12 columns">
+                   <h5 class="f-title">二、基本資料</h5>
+               </div>
+          </div>
+
+          <div class="row collapse">   
+                  <div class="medium-6 columns">
+                    <span class="label_txt block">學生學號：D301096003</span>
+                  </div> 
+                  <div class="medium-6 columns">
+                    <span class="label_txt block">學生姓名：萬序恬</span>
+                  </div> 
+                  <div class="medium-6 columns">
+                    <span class="label_txt block">系別：藥學系</span>
+                  </div> 
+                  <div class="medium-6 columns">
+                    <span class="label_txt block">年級：7</span>
+                  </div> 
+                  <div class="medium-6 columns">
+                    <span class="label_txt block">聯絡電話：0912123124</span>
+                  </div> 
+                  <div class="medium-6 columns">
+                    <span class="label_txt block">性別：女</span>
+                  </div>
+          </div>
+          <div class="row collapse">   
+              <div class="medium-12 large-1 columns">
+                <span class="label_txt">賃居地址：</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns">
+                  <span class="label_block">
+                    <select>
+                      <option value="09:00~09:30">台北市</option>
+                      <option value="09:30~10:00">台北市</option>
+                      <option value="10:00~10:30">台北市</option>
+                    </select>
+                  </span>                 
+              </div>
+              <div class="medium-4 large-2 columns">
+                  <span class="label_block">
+                    <select>
+                      <option value="09:00~09:30">中山區</option>
+                      <option value="09:30~10:00">中山區</option>
+                      <option value="10:00~10:30">中山區</option>
+                    </select>
+                  </span>
+              </div>
+              <div class="medium-4 large-2 columns">
+                  <span class="label_block">
+                    <select>
+                      <option value="09:00~09:30">南京東路一段</option>
+                      <option value="09:30~10:00">南京東路一段</option>
+                      <option value="10:00~10:30">南京東路一段</option>
+                    </select>
+                  </span>
+              </div>
+              <div class="medium-12 large-5 columns end">
+                  <span class="label_block">
+                      <input class="small" type="text">巷
+                      <input class="small" type="text">弄
+                      <input class="small" type="text">號之
+                      <input class="small" type="text">樓之
+                      <input class="small" type="text">室
+                  </span>
+              </div>
+
+            </div>
+            <div class="row collapse">   
+              <div class="medium-2 large-1 columns">
+                <span class="label_txt">房東姓名：</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end">
+                  <span class="label_block">
+                    <input type="text">
+                  </span>                 
+              </div>
+            </div>
+            <div class="row collapse">   
+              <div class="medium-2 large-1 columns">
+                <span class="label_txt">房東電話：</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end">
+                  <span class="label_block">
+                    <input type="text">
+                  </span>                 
+              </div>
+            </div>
+            <div class="row collapse">   
+              <div class="medium-2 large-1 columns">
+                <span class="label_txt">室友姓名：</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end">
+                  <span class="label_block">
+                    <input type="text">
+                  </span>                 
+              </div>
+            </div>
+            <div class="row collapse">   
+              <div class="medium-2 large-1 columns">
+                <span class="label_txt">室友電話：</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end">
+                  <span class="label_block">
+                    <input type="text">
+                  </span>                 
+              </div>
+            </div>
+            <div class="row collapse">   
+              <div class="medium-2 large-1 columns">
+                <span class="label_txt">租金：</span>
+              </div> 
+     
+              <div class="medium-4 large-11 columns end">
+                  <span class="label_block">
+                    <input type="radio" name="pokemon" value="Red" id="m01">
+                    <label for="m01">每月</label>
+                    <input type="radio" name="pokemon" value="Red" id="m02">
+                    <label for="m02">每學期</label>
+
+                    <input class="small-100" type="text">元
+                  </span>                
+              </div>
+            </div>
+
+            <h5 class="f-title">三、賃居設施調查</h5>
+
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">1.租金是否含水電？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility01" id="a01">
+                    <label for="a01">是</label>
+                    <input type="radio" name="facility01" id="a02">
+                    <label for="a02">否</label>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">2.契約是否訂定？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility02" id="a03">
+                    <label for="a03">是</label>
+                    <input type="radio" name="facility02" id="a04">
+                    <label for="a04">否</label>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">3.租屋由本校租屋服務網獲知？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility03" id="a05">
+                    <label for="a05">是</label>
+                    <input type="radio" name="facility03" id="a06">
+                    <label for="a06">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">4.租賃費用是否父母提供？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility04" id="a07">
+                    <label for="a07">是</label>
+                    <input type="radio" name="facility04" id="a08">
+                    <label for="a08">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">5.是否有滅火器？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility05" id="a09">
+                    <label for="a09">是</label>
+                    <input type="radio" name="facility05" id="a10">
+                    <label for="a10">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">6.是否有緩降設備？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility06" id="a11">
+                    <label for="a11">是</label>
+                    <input type="radio" name="facility06" id="a12">
+                    <label for="a12">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">7.是否為頂樓加蓋？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility07" id="a13">
+                    <label for="a13">是</label>
+                    <input type="radio" name="facility07" id="a14">
+                    <label for="a14">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">8.是否有兩個以上逃生口？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility08" id="a15">
+                    <label for="a15">是</label>
+                    <input type="radio" name="facility08" id="a16">
+                    <label for="a16">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">9.更換房客時是否有更換房鎖？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility09" id="a17">
+                    <label for="a17">是</label>
+                    <input type="radio" name="facility09" id="a18">
+                    <label for="a18">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">10.是否有監視錄影設備？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility10" id="a19">
+                    <label for="a19">是</label>
+                    <input type="radio" name="facility10" id="a20">
+                    <label for="a20">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">11.是否設有保全及管理人員？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility11" id="a21">
+                    <label for="a21">是</label>
+                    <input type="radio" name="facility11" id="a22">
+                    <label for="a22">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">12.是否設有保安系統？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility12" id="a23">
+                    <label for="a23">是</label>
+                    <input type="radio" name="facility12" id="a24">
+                    <label for="a24">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">13.是否有社區巡守人員？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility13" id="a25">
+                    <label for="a25">是</label>
+                    <input type="radio" name="facility13" id="a26">
+                    <label for="a26">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">14.是否設有感應式安全辨識裝置？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility14" id="a27">
+                    <label for="a27">是</label>
+                    <input type="radio" name="facility14" id="a28">
+                    <label for="a28">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">15.是否設有警察巡邏箱？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility15" id="a29">
+                    <label for="a29">是</label>
+                    <input type="radio" name="facility15" id="a30">
+                    <label for="a30">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">16.巷道是否有防火巷？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="facility16" id="a31">
+                    <label for="a31">是</label>
+                    <input type="radio" name="facility16" id="a32">
+                    <label for="a32">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <h5 class="f-title">四、賃居滿意度調查</h5>
+
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">1. 您認為租屋周圍環境？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction1" id="verybad1">
+                      <label for="verybad1">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction1" id="bad1">
+                      <label for="bad"1>不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction1" id="normal1">
+                      <label for="normal1">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction1" id="good1">
+                      <label for="good1">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction1" id="verygood1">
+                      <label for="verygood1">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">2. 您認為租屋採光？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                 <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction2" id="verybad2">
+                      <label for="verybad2">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction2" id="bad2">
+                      <label for="bad2">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction2" id="normal2">
+                      <label for="normal2">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction2" id="good2">
+                      <label for="good2">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction2" id="verygood2">
+                      <label for="verygood2">極好</label>
+                    </span>
+                  </span>                 
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">3. 您認為租屋通風？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction3" id="verybad3">
+                      <label for="verybad3">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction3" id="bad3">
+                      <label for="bad3">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction3" id="normal3">
+                      <label for="normal3">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction3" id="good3">
+                      <label for="good3">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction3" id="verygood3">
+                      <label for="verygood3">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">4. 您認為租屋清潔衛生？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction4" id="verybad4">
+                      <label for="verybad4">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction4" id="bad4">
+                      <label for="bad4">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction4" id="normal4">
+                      <label for="normal4">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction4" id="good4">
+                      <label for="good4">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction4" id="verygood4">
+                      <label for="verygood4">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">5. 您認為租屋安全設施？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction5" id="verybad5">
+                      <label for="verybad5">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction5" id="bad5">
+                      <label for="bad5">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction5" id="normal5">
+                      <label for="normal5">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction5" id="good5">
+                      <label for="good5">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction5" id="verygood5">
+                      <label for="verygood5">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">6. 您認為租屋瓦斯設備？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction6" id="verybad6">
+                      <label for="verybad6">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction6" id="bad6">
+                      <label for="bad6">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction6" id="normal6">
+                      <label for="normal6">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction6" id="good6">
+                      <label for="good6">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction6" id="verygood6">
+                      <label for="verygood6">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">7. 您認為租屋室友關係？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction7" id="verybad7">
+                      <label for="verybad7">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction7" id="bad7">
+                      <label for="bad7">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction7" id="normal7">
+                      <label for="normal7">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction7" id="good7">
+                      <label for="good7">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction7" id="verygood7">
+                      <label for="verygood7">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">8. 您認為租屋出入交通？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction8" id="verybad8">
+                      <label for="verybad8">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction8" id="bad8">
+                      <label for="bad8">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction8" id="normal8">
+                      <label for="normal8">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction8" id="good8">
+                      <label for="good8">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction8" id="verygood8">
+                      <label for="verygood8">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">9. 您認為租屋房東服務？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction9" id="verybad9">
+                      <label for="verybad9">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction9" id="bad9">
+                      <label for="bad9">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction9" id="normal9">
+                      <label for="normal9">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction9" id="good9">
+                      <label for="good9">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction9" id="verygood9">
+                      <label for="verygood9">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-7 columns">
+                <span class="label_txt">10.您認為租屋生活機能？</span>
+              </div> 
+     
+              <div class="medium-4 large-5 columns end large-text-right">
+                  <span class="label_txt">
+                    <span class="block">
+                      <input type="radio" name="satisfaction10" id="verybad10">
+                      <label for="verybad10">極不好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction10" id="bad10">
+                      <label for="bad10">不好</label>
+                    </span>                    
+                    <span class="block">
+                      <input type="radio" name="satisfaction10" id="normal10">
+                      <label for="normal10">普通</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction10" id="good10">
+                      <label for="good10">好</label>
+                    </span>
+                    <span class="block">
+                      <input type="radio" name="satisfaction10" id="verygood10">
+                      <label for="verygood">極好</label>
+                    </span>
+                  </span>                
+              </div>
+            </div>
+
+
+            <h5 class="f-title">五、賃居安全評核</h5>
+
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">1.建物具有共同門禁管制出口且有鎖具？</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="safety1" value="Red" id="b01">
+                    <label for="b01">是</label>
+                    <input type="radio" name="safety1" value="Red" id="b02">
+                    <label for="b02">否</label>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">2.建築物內或周邊停車場所設有照明者?</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="safety2" value="Red" id="b03">
+                    <label for="b03">是</label>
+                    <input type="radio" name="safety2" value="Red" id="b04">
+                    <label for="b04">否</label>
+                  </span>                
+              </div>
+            </div>
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">3.滅火器功能是否正常?</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="safety3" value="Red" id="b05">
+                    <label for="b05">是</label>
+                    <input type="radio" name="safety3" value="Red" id="b06">
+                    <label for="b06">否</label>
+                  </span>                
+              </div>
+            </div>
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">4.熱水器裝設是否符合安全要求?</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="safety4" value="Red" id="b07">
+                    <label for="b07">是</label>
+                    <input type="radio" name="safety4" value="Red" id="b08">
+                    <label for="b08">否</label>
+                  </span>                
+              </div>
+            </div>
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">5.有火警警報器或獨立型偵煙偵測器?</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="safety5" value="Red" id="b09">
+                    <label for="b09">是</label>
+                    <input type="radio" name="safety5" value="Red" id="b10">
+                    <label for="b10">否</label>
+                  </span>                
+              </div>
+            </div>
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">6.逃生通道是否暢通，標示是否清楚?</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="safety6" value="Red" id="b11">
+                    <label for="b11">是</label>
+                    <input type="radio" name="safety6" value="Red" id="b12">
+                    <label for="b12">否</label>
+                  </span>                
+              </div>
+            </div>
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">7.學生是否知道逃生通道及逃生要領?</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="safety7" value="Red" id="b13">
+                    <label for="b13">是</label>
+                    <input type="radio" name="safety7" value="Red" id="b14">
+                    <label for="b14">否</label>
+                  </span>                
+              </div>
+            </div>
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-10 columns">
+                <span class="label_txt">8.賃居住所電器線路是否安全?</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end large-text-right">
+                  <span class="label_txt">
+                    <input type="radio" name="safety8" value="Red" id="b15">
+                    <label for="b15">是</label>
+                    <input type="radio" name="safety8" value="Red" id="b16">
+                    <label for="b16">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <!-- 文字方塊 -->
+             <h5 class="f-title">六、建議改善及附註事項：</h5>
+             <textarea></textarea>
+
+
+
+
+
+            
+            
+
+
+    </div>    
+  </div>
+  <div class="row text-center">     
+        <div class="small-12 columns">
+             <a class="button M-B-20" href="visit_check_teacher.html">送出</a>
+             <a class="button btn-G M-B-20" href="javascript:;">暫存資料</a>
+             <a class="button btn-G M-B-20" href="visit_list.html">返回列表</a>
+             <a class="button btn-G" href="javascript:;">清除重填</a>
+         </div>
+     </div>
+
+
+  <!-- contain結束 -->
+</div>
+<script src="js/vendor/foundation-datepicker.min.js"></script>
+    <script>
+      $(function () {
+        window.prettyPrint && prettyPrint();
+        $('#dp1').fdatepicker({
+          format: 'yyyy-mm-dd',
+          disableDblClickSelection: true
+        });
+       
+  
+        // implementation of disabled form fields
+        // var nowTemp = new Date();
+        // var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        // var checkin = $('#dpd1').fdatepicker({
+        //   onRender: function (date) {
+        //     return date.valueOf() < now.valueOf() ? 'disabled' : '';
+        //   }
+        // }).on('changeDate', function (ev) {
+        //   if (ev.date.valueOf() > checkout.date.valueOf()) {
+        //     var newDate = new Date(ev.date)
+        //     newDate.setDate(newDate.getDate() + 1);
+        //     checkout.update(newDate);
+        //   }
+        //   checkin.hide();
+        //   $('#dpd2')[0].focus();
+        // }).data('datepicker');
+        // var checkout = $('#dpd2').fdatepicker({
+        //   onRender: function (date) {
+        //     return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+        //   }
+        // }).on('changeDate', function (ev) {
+        //   checkout.hide();
+        // }).data('datepicker');
+      });
+    </script>
+
+   
+
+<footer class="footer">
+    <ul class="nav-footer inline-list">
+            <li><a target="_blank" href="http://rent.tmu.edu.tw/admin/index_login.php">管理平台</a></li>
+            <li><a href="news_list.html">最新消息</a></li>            
+            <li><a target="_blank" href="http://depsys.tmu.edu.tw/evaluate/Login.aspx">長官專區</a></li>
+            <li><a href="member.html">會員專區</a></li>
+
+            <li><a href="rent_list.html">租賃物件</a></li>
+            <li><a href="contact_us.html">聯絡我們</a></li>            
+            <li><a href="site_map.html">網站地圖</a></li>
+            <li><a target="_blank" href="http://rent.tmu.edu.tw/school_safety_login.php">校安工作平台</a></li>
+
+            <li><a target="_blank" href="http://www.tmu.edu.tw/v3/main.php">臺北醫學大學</a></li>
+    </ul>
+
+    <p>Copyright © 2015 臺北醫學大學賃居服務網 版權所有 轉載必究</p>
+</footer>
+
+  </body>
+</html>

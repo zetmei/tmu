@@ -1,0 +1,488 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>北醫賃居資訊服務網</title>
+
+<!--CSS
+================================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/all.css">
+
+  <link rel="stylesheet" href="css/database/foundation-datepicker.min.css">
+
+<!--IE8支援支援HTML5
+================================================== -->
+<!--[if lt IE 9]>
+<script src="js/vendor/html5shiv.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+<![endif]-->
+
+<!--JS
+================================================== -->
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" ></script>  
+  <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/foundation.min.js"></script> 
+  <script src="js/layout.js"></script> 
+  <script src="js/page.js"></script> 
+</head>
+<body>
+<header class="header"> 
+<div class="header-top">   
+    <div class="row">
+      <div class="large-12 columns">
+          <!-- side選單 -->
+          <ul class="nav-second inline-list">
+            <li class="sign-in"><a href="javascript:;" data-reveal-id="myModal">登入<i class="fa fa-sign-in icon_font"></i></a></li>
+            <li><a href="../en/index.html">English</a></li>            
+            <li><a href="site_map.html">網站地圖</a></li>
+            <li><a target="_blank" href="http://www.tmu.edu.tw/v3/main.php">臺北醫學大學</a></li>
+          </ul>
+      </div>
+    </div>
+</div>
+
+<!-- 光箱-登入 -->
+<div id="myModal" class="reveal-modal full reveal-modal-login" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div class="modal-login">
+        <div class="row small-collaps">
+            <div class="medium-12 columns">
+                <h3 class="title-modal title-05">登入                    
+                </h3>
+
+                <input type="text" placeholder="帳號">
+                <input type="text" placeholder="密碼">
+
+                <div class="row check_code">
+                    <div class="small-5 columns">
+                         <input class="inline" type="text" placeholder="驗證碼">
+                    </div>
+                    <div class="small-5 columns">
+                         <img class="inline" src="images/icon/check_code.png">
+                    </div>
+                    <div class="small-2 columns">
+                         <a href="javascript:;"><i class="fa fa-refresh"></i></a>
+                    </div>
+                </div>
+
+                <a class="button btn-full" href="newslist.html">登入</a>
+
+                <div class="align-center text-center">或</div>
+
+                <a class="button btn-full btn-red" href="newslist.html">
+                <i class="fa fa-google-plus"></i>
+                使用Google帳號登入</a>
+
+                <!-- <hr class="hr_opacity"> -->
+                
+                <div class="align-center text-center bottom_txt">
+                    <a href="javascript:;">申請房東帳號</a>
+                    <a href="javascript:;">忘記密碼</a>
+                </div>
+
+
+            </div>
+            <div class="medium-12 columns">
+            </div>
+        </div>
+    </div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div class="header-bottom">   
+    <div class="row collapse">
+      <div class="large-12 columns">
+         <!-- logo -->
+         <div class="logo"><a href="index.html"></a></div>
+         <!-- icon主選單 -->
+        <div class="nav-primary icon-bar five-up show-for-large-up">
+          <a class="item" href="news_list.html">
+            <i class="fa fa-bullhorn icon_font"></i>
+            <label>最新消息</label>
+          </a>
+          <a class="item" href="rent_list.html">
+            <i class="fa fa-home icon_font"></i>
+            <label>租賃物件</label>
+          </a>
+          <a class="item" target="_blank" href="http://my2.tmu.edu.tw/site/houseservice">
+            <i class="fa fa-comment icon_font"></i>
+            <label>討論區</label>
+          </a>
+          <a class="item" href="visit_list.html">
+            <i class="fa fa-key icon_font"></i>
+            <label>訪視行程</label>
+          </a>
+          <a class="item" href="visit_list_tutor.html">
+            <i class="fa fa-book icon_font"></i>
+            <label>導師專區</label>
+          </a>
+          <a class="item active" href="visit_record.html">
+            <i class="fa fa-folder-open icon_font"></i>
+            <label>我的資料</label>
+          </a>
+          <a class="item" href="contact_us.html">
+            <i class="fa fa-paper-plane icon_font"></i>
+            <label>聯絡我們</label>
+          </a>
+        </div>
+
+        <!-- 手機menu icon -->
+        <a href="javascript:;" class="menu-icon hide-for-large-up">Menu</a>
+        
+
+
+      </div>
+    </div>
+</div>
+</header>
+
+<!-- 手機主選單 -->
+        <div class="nav-mobile">
+          <a class="item" href="news_list.html">最新消息
+          </a>
+          <a class="item" href="rent_list.html">租賃物件
+          </a>
+          <a class="item" target="_blank" href="http://my2.tmu.edu.tw/site/houseservice">討論區
+          </a>
+          <a class="item" href="visit_list.html">訪視行程
+          </a>
+          <a class="item" href="visit_list_tutor.html">導師專區
+          </a>
+          <a class="item" href="visit_record.html">我的資料
+          </a>
+          <a class="item" href="contact_us.html">聯絡我們
+          </a>
+        </div>
+
+
+ 
+<!-- 主視覺 -->
+<div class="mainvision show-for-large-up">        
+        <img class="img-responsive" data-interchange="[images/banner/inside01.png,(default)], [images/banner/banner01_600w.png,(small)], [images/banner/banner01_600w.png,(medium)], [images/banner/inside01.png,(large)]">    
+</div>
+
+<!-- 每頁內容置換 -->
+<div class="contain visit_pages"> 
+
+  <!-- 內頁標題 -->
+  <div class="row">     
+      <div class="small-12 columns">
+          <h3 class="title-page title-17">填寫回條
+
+          </h3>
+          
+      </div>
+  </div>
+
+  <div class="row form-inline">
+    <div class="medium-12 large-12 columns">
+
+          <div class="row collapse">
+              <div class="medium-12 columns">
+                <p><b>萬序恬</b>同學你(妳)好：<br>
+                校外賃居生活辛苦了！附件係老師或教官們於本學期到你(妳)的租屋處訪視暨安全評核記錄表，請確認是否無誤；其中有下列的不合格處，影響您的賃居安全；因應教育部的要求須實施管制再複查，請告知貴房東知悉並提出改善要求，若房東仍未或不願改善，為了居住安全，建議搬離並另覓安全之處所。<br>
+                <br>
+                學安<b>
+                <p class="text-right">學生事務處暨軍訓室 敬啟</p>
+              </div>
+          </div>
+
+          <div class="row collapse">
+              <div class="medium-1 columns">
+                <span class="label_txt"><strong>訪視時間：</strong></span>
+              </div>
+              <div class="medium-10 columns end">
+                <span class="label_txt">2015 年 7 月 23 日 12:00 ~ 12:30</span>
+              </div>
+          </div>
+          
+
+            <!-- 分隔線 -->
+      <div class="result_box">
+
+            <h5 class="r-title">賃居安全評核項目</h5>
+
+            <ul class="select_ul">
+              <li>
+                <div class="row collapse">   
+                <div class="medium-8 large-10 columns">
+                  <span class="label_txt">1.建物具有共同門禁管制出口且有鎖具?</span>
+                </div> 
+       
+                <div class="medium-4 large-2 columns end large-text-right">
+                    <span class="label_txt">
+                      <input type="radio" id="a01" checked>
+                      <label for="a01">是</label>
+                    </span>                
+                </div>
+              </div>
+              </li>
+              <li>
+
+              <li>
+                <div class="row collapse">   
+                <div class="medium-8 large-10 columns">
+                  <span class="label_txt">2.建築物內或周邊停車場所設有照明者?</span>
+                </div> 
+       
+                <div class="medium-4 large-2 columns end large-text-right">
+                    <span class="label_txt">
+                      <input type="radio" id="a02" checked>
+                      <label for="a02">是</label>
+                    </span>                
+                </div>
+              </div>
+              </li>
+              <li>
+              
+              <li>
+                <div class="row collapse">   
+                <div class="medium-8 large-10 columns">
+                  <span class="label_txt">3.滅火器功能是否正常?</span>
+                </div> 
+       
+                <div class="medium-4 large-2 columns end large-text-right">
+                    <span class="label_txt">
+                      <input type="radio" id="a03" checked>
+                      <label for="a03">是</label>
+                    </span>                
+                </div>
+              </div>
+              </li>
+
+              <li>
+                   <div class="row collapse">   
+                    <div class="medium-8 large-10 columns">
+                      <span class="label_txt">4.熱水器裝設是否符合安全要求?</span>
+                    </div> 
+           
+                    <div class="medium-4 large-2 columns end large-text-right">
+                        <span class="label_txt">
+                          <input type="radio" id="a04" checked>
+                          <label for="a04">是</label>
+                        </span>                
+                    </div>
+                  </div>  
+              </li>
+
+              <li>
+                   <div class="row collapse">   
+                    <div class="medium-8 large-10 columns">
+                      <span class="label_txt">5.有火警警報器或獨立型偵煙偵測器?</span>
+                    </div> 
+           
+                    <div class="medium-4 large-2 columns end large-text-right">
+                        <span class="label_txt">
+                          <input type="radio" id="a05" checked>
+                          <label for="a05">否</label>
+                        </span>                
+                    </div>
+                  </div>
+              </li>
+
+              <li>
+                  <div class="row collapse">   
+                    <div class="medium-8 large-10 columns">
+                      <span class="label_txt">6.逃生通道是否暢通，標示是否清楚?</span>
+                    </div> 
+           
+                    <div class="medium-4 large-2 columns end large-text-right">
+                        <span class="label_txt">
+                          <input type="radio" id="a06" checked>
+                          <label for="a06">是</label>
+                        </span>                
+                    </div>
+                  </div>
+              </li>
+
+              <li>
+                  <div class="row collapse">   
+                      <div class="medium-8 large-10 columns">
+                        <span class="label_txt">7.學生是否知道逃生通道及逃生要領?</span>
+                      </div> 
+             
+                      <div class="medium-4 large-2 columns end large-text-right">
+                          <span class="label_txt">
+                            <input type="radio" id="a07" checked>
+                            <label for="a07">否</label>
+                          </span>                
+                      </div>
+                    </div>
+              </li>
+
+              <li>
+                   <div class="row collapse">   
+                        <div class="medium-8 large-10 columns">
+                          <span class="label_txt">8.賃居住所電器線路是否安全?</span>
+                        </div> 
+               
+                        <div class="medium-4 large-2 columns end large-text-right">
+                            <span class="label_txt">
+                              <input type="radio" id="a08" checked>
+                              <label for="a08">否</label>
+                            </span>                
+                        </div>
+                      </div>
+              </li>
+
+            </ul>
+
+           
+            
+      </div>
+             <!-- 學生回覆內容 -->
+             <div class="row collapse">
+              <div class="medium-12 columns">
+                   <h5 class="f-title">學生回條</h5>
+               </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-3 columns">
+                <span class="label_txt">上述缺失是否已改善？</span>
+              </div> 
+     
+              <div class="medium-4 large-9 columns end">
+                  <span class="label_txt">
+                    <input type="radio" name="pokemon" value="Red" id="c01" checked>
+                    <label for="c01">否</label>
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-3 columns">
+                <span class="label_txt">尚有哪些項目尚未改善？</span>
+              </div> 
+     
+              <div class="medium-12 large-9 columns">
+                  <span class="label_txt">
+                    第五項、第七項
+                  </span>                
+              </div>
+            </div>
+
+            <div class="row collapse select_box">   
+              <div class="medium-8 large-3 columns">
+                <span class="label_txt">建議事項：</span>
+              </div> 
+     
+              <div class="medium-12 large-9 columns">
+                  <span class="label_txt">
+                    該生目前剛搬到此住所,<br>環境尚不熟悉，建議多予以關心
+                  </span>                
+              </div>
+            </div>
+
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-3 columns">
+                <span class="label_txt">賃居地址：</span>
+              </div> 
+     
+              <div class="medium-12 large-9 columns">
+                  <span class="label_txt">
+                    台北市中山區南京東路1段96號9樓
+                  </span>                
+              </div>
+            </div>
+
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-3 columns">
+                <span class="label_txt">房東姓名：</span>
+              </div> 
+     
+              <div class="medium-12 large-9 columns">
+                  <span class="label_txt">
+                    陳思韻
+                  </span>                
+              </div>
+            </div>
+
+             <div class="row collapse select_box">   
+              <div class="medium-8 large-3 columns">
+                <span class="label_txt">房東電話：</span>
+              </div> 
+     
+              <div class="medium-12 large-9 columns">
+                  <span class="label_txt">
+                    02-25416111
+                  </span>                
+              </div>
+            </div>
+
+
+
+    </div>    
+  </div>
+  <div class="row text-center">     
+        <div class="small-12 columns">
+             <a class="button btn-G M-B-20" href="visit_list.html">返回列表</a>
+         </div>
+     </div>
+
+
+  <!-- contain結束 -->
+</div>
+<script src="js/vendor/foundation-datepicker.min.js"></script>
+    <script>
+      $(function () {
+        window.prettyPrint && prettyPrint();
+        $('#dp1').fdatepicker({
+          format: 'yyyy-mm-dd',
+          disableDblClickSelection: true
+        });
+       
+  
+        // implementation of disabled form fields
+        // var nowTemp = new Date();
+        // var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        // var checkin = $('#dpd1').fdatepicker({
+        //   onRender: function (date) {
+        //     return date.valueOf() < now.valueOf() ? 'disabled' : '';
+        //   }
+        // }).on('changeDate', function (ev) {
+        //   if (ev.date.valueOf() > checkout.date.valueOf()) {
+        //     var newDate = new Date(ev.date)
+        //     newDate.setDate(newDate.getDate() + 1);
+        //     checkout.update(newDate);
+        //   }
+        //   checkin.hide();
+        //   $('#dpd2')[0].focus();
+        // }).data('datepicker');
+        // var checkout = $('#dpd2').fdatepicker({
+        //   onRender: function (date) {
+        //     return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+        //   }
+        // }).on('changeDate', function (ev) {
+        //   checkout.hide();
+        // }).data('datepicker');
+      });
+    </script>
+
+   
+
+<footer class="footer">
+    <ul class="nav-footer inline-list">
+            <li><a target="_blank" href="http://rent.tmu.edu.tw/admin/index_login.php">管理平台</a></li>
+            <li><a href="news_list.html">最新消息</a></li>            
+            <li><a target="_blank" href="http://depsys.tmu.edu.tw/evaluate/Login.aspx">長官專區</a></li>
+            <li><a href="member.html">會員專區</a></li>
+
+            <li><a href="rent_list.html">租賃物件</a></li>
+            <li><a href="contact_us.html">聯絡我們</a></li>            
+            <li><a href="site_map.html">網站地圖</a></li>
+            <li><a target="_blank" href="http://rent.tmu.edu.tw/school_safety_login.php">校安工作平台</a></li>
+
+            <li><a target="_blank" href="http://www.tmu.edu.tw/v3/main.php">臺北醫學大學</a></li>
+    </ul>
+
+    <p>Copyright © 2015 臺北醫學大學賃居服務網 版權所有 轉載必究</p>
+</footer>
+
+  </body>
+</html>

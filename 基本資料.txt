@@ -1,0 +1,63 @@
+/////////////////////////////////////////////////////*思考物*/
+-登入光箱
+-top btn設計
+
+
+
+/////////////////////////////////////////////////////*字級定義*/
+h3:24 (大標)
+p :16px (正常)
+   14px (不重要)
+   12px (頁尾)
+
+nav1:16px
+(a)  12px
+/////////////////////////////////////////////////////*連結設定*/
+聯絡我們
+contact_us.html
+
+網站地圖
+site_map.html
+
+台北醫學大學
+http://www.tmu.edu.tw/v3/main.html
+
+登入
+school_safety_login.html
+
+
+最新消息
+news_list.html
+討論區
+http://my2.tmu.edu.tw/site/houseservice
+訪視行程
+visit_list.html
+導師專區
+visit_list_tutor.html
+我的資料
+visit_record.html
+聯絡我們
+contact_us.html
+
+
+//頁尾
+管理平台
+#
+最新消息
+news_list.html
+會員專區
+member.html
+租賃物件
+rent_list.html
+聯絡我們
+contact_us.html
+網站地圖
+site_map.html
+校安工作平台
+school_safety_login.html
+台北醫學大學
+http://www.tmu.edu.tw/v3/main.html
+
+
+物件內容
+rent_content001.html

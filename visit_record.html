@@ -1,0 +1,437 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>北醫賃居資訊服務網</title>
+
+<!--CSS
+================================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/all.css">
+
+
+<!--IE8支援支援HTML5
+================================================== -->
+<!--[if lt IE 9]>
+<script src="js/vendor/html5shiv.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+<![endif]-->
+
+<!--JS
+================================================== -->
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" ></script>  
+  <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/foundation.min.js"></script> 
+  <script src="js/layout.js"></script> 
+  <script src="js/page.js"></script> 
+
+</head>
+<body>
+<header class="header"> 
+<div class="header-top">   
+    <div class="row">
+      <div class="large-12 columns">
+          <!-- side選單 -->
+          <ul class="nav-second inline-list">
+            <li class="sign-in"><a href="javascript:;" data-reveal-id="myModal">登入<i class="fa fa-sign-in icon_font"></i></a></li>
+            <li><a href="../en/index.html">English</a></li>            
+            <li><a href="site_map.html">網站地圖</a></li>
+            <li><a target="_blank" href="http://www.tmu.edu.tw/v3/main.php">臺北醫學大學</a></li>
+          </ul>
+      </div>
+    </div>
+</div>
+
+<!-- 光箱-登入 -->
+<div id="myModal" class="reveal-modal full reveal-modal-login" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div class="modal-login">
+        <div class="row small-collaps">
+            <div class="medium-12 columns">
+                <h3 class="title-modal title-05">登入                    
+                </h3>
+
+                <input type="text" placeholder="帳號">
+                <input type="text" placeholder="密碼">
+
+                <div class="row check_code">
+                    <div class="small-5 columns">
+                         <input class="inline" type="text" placeholder="驗證碼">
+                    </div>
+                    <div class="small-5 columns">
+                         <img class="inline" src="images/icon/check_code.png">
+                    </div>
+                    <div class="small-2 columns">
+                         <a href="javascript:;"><i class="fa fa-refresh"></i></a>
+                    </div>
+                </div>
+
+                <a class="button btn-full" href="newslist.html">登入</a>
+
+                <div class="align-center text-center">或</div>
+
+                <a class="button btn-full btn-red" href="newslist.html">
+                <i class="fa fa-google-plus"></i>
+                使用Google帳號登入</a>
+
+                <!-- <hr class="hr_opacity"> -->
+                
+                <div class="align-center text-center bottom_txt">
+                    <a href="javascript:;">申請房東帳號</a>
+                    <a href="javascript:;">忘記密碼</a>
+                </div>
+
+
+            </div>
+            <div class="medium-12 columns">
+            </div>
+        </div>
+    </div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div class="header-bottom">   
+    <div class="row collapse">
+      <div class="large-12 columns">
+         <!-- logo -->
+         <div class="logo"><a href="index.html"></a></div>
+         <!-- icon主選單 -->
+        <div class="nav-primary icon-bar five-up show-for-large-up">
+          <a class="item" href="news_list.html">
+            <i class="fa fa-bullhorn icon_font"></i>
+            <label>最新消息</label>
+          </a>
+          <a class="item" href="rent_list.html">
+            <i class="fa fa-home icon_font"></i>
+            <label>租賃物件</label>
+          </a>
+          <a class="item" target="_blank" href="http://my2.tmu.edu.tw/site/houseservice">
+            <i class="fa fa-comment icon_font"></i>
+            <label>討論區</label>
+          </a>
+          <a class="item active" href="visit_record.html">
+            <i class="fa fa-key icon_font"></i>
+            <label>訪視紀錄</label>
+          </a>
+          <a class="item" href="visit_list_tutor.html">
+            <i class="fa fa-book icon_font"></i>
+            <label>導師專區</label>
+          </a>
+          <a class="item" href="my_data.html">
+            <i class="fa fa-folder-open icon_font"></i>
+            <label>我的資料</label>
+          </a>
+          <a class="item" href="contact_us.html">
+            <i class="fa fa-paper-plane icon_font"></i>
+            <label>聯絡我們</label>
+          </a>
+        </div>
+
+        <!-- 手機menu icon -->
+        <a href="javascript:;" class="menu-icon hide-for-large-up">Menu</a>
+        
+
+
+      </div>
+    </div>
+</div>
+</header>
+
+<!-- 手機主選單 -->
+        <div class="nav-mobile">
+          <a class="item" href="news_list.html">最新消息
+          </a>
+          <a class="item" href="rent_list.html">租賃物件
+          </a>
+          <a class="item" target="_blank" href="http://my2.tmu.edu.tw/site/houseservice">討論區
+          </a>
+          <a class="item" href="visit_list.html">訪視行程
+          </a>
+          <a class="item" href="visit_list_tutor.html">導師專區
+          </a>
+          <a class="item" href="visit_record.html">我的資料
+          </a>
+          <a class="item" href="contact_us.html">聯絡我們
+          </a>
+        </div>
+
+
+ 
+<!-- 主視覺 -->
+<div class="mainvision show-for-large-up">        
+        <img class="img-responsive" data-interchange="[images/banner/inside01.png,(default)], [images/banner/banner01_600w.png,(small)], [images/banner/banner01_600w.png,(medium)], [images/banner/inside01.png,(large)]">    
+</div>
+
+<!-- 每頁內容置換 -->
+<div class="contain visit_pages"> 
+
+  <!-- 內頁標題 -->
+  <div class="row">     
+      <div class="small-12 columns">
+          <h3 class="title-page title-14">訪視紀錄              
+          </h3>
+          
+      </div>
+  </div>
+
+  <div class="row form-inline">
+    <div class="medium-12 large-9 columns">
+
+
+            <div class="row">   
+              <div class="medium-2 large-2 columns large-text-right">
+                <span class="label_txt">學年度：</span>
+              </div> 
+     
+              <div class="medium-4 large-4 columns end">
+                  <span class="label_block">
+                    <select>
+                      <option>104年度</option>
+                      <option>104年度</option>
+                      <option>104年度</option>
+                    </select>
+                  </span>                 
+              </div>
+            </div>
+            <div class="row">   
+              <div class="medium-2 large-2 columns large-text-right">
+                <span class="label_txt">學期：</span>
+              </div> 
+     
+              <div class="medium-4 large-4 columns end">
+                  <span class="label_block">
+                     <select>
+                      <option>第一學期</option>
+                      <option>第二學期</option>
+                    </select>
+                  </span>                 
+              </div>
+              <div class="medium-4 large-4 columns end">
+                  <span class="label_block">
+                    <input type="text" placeholder="請輸入學號或姓名">
+                  </span>                 
+              </div>
+            </div>
+            <div class="row">   
+              <div class="medium-2 large-2 columns large-text-right">
+                <span class="label_txt">訪視方式：</span>
+              </div> 
+     
+              <div class="medium-4 large-4 columns end">
+                  <span class="label_block">
+                    <select>
+                      <option>全部</option>
+                      <option>全部</option>
+                      <option>全部</option>
+                    </select>
+                  </span>                 
+              </div>
+            </div>
+            <div class="row">   
+              <div class="medium-2 large-2 columns large-text-right">
+                <span class="label_txt">評訪結果：</span>
+              </div> 
+     
+              <div class="medium-4 large-2 columns end">
+                  <span class="label_block">
+                    <select>
+                      <option>合格</option>
+                      <option>不合格</option>
+                    </select>
+                  </span>                 
+              </div>
+            </div>
+    </div>
+    <div class="medium-12 large-12 columns">
+            <div class="row text-center">     
+                <div class="small-12 columns">
+                     <a class="button M-B-20" href="javascript:;">查詢</a>
+                 </div>
+             </div>
+
+    </div>    
+  </div>
+
+  <!-- RWD表格 -->
+  <div class="row text-center">     
+      <div class="small-12 columns rwdsp">
+
+        <table>
+          <thead>
+            <tr>
+              <th width="10%">學年度</th>
+              <th width="10%">日期</th>
+              <th width="10%">約訪時間</th>
+              <th width="10%">訪視人員</th>
+              <th width="30%">賃居地址</th>
+              <th width="10%">狀態</th>
+              <th width="10%">訪評結果</th>
+              <th width="10%">複查結果</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+          <tr>
+            <td class="text-left" data-title="學年度">103/2</td>
+            <td class="text-left" data-title="日期"><a href="visit_reservation.html">選擇時間</a></td>
+            <td class="text-left" data-title="約訪時間">
+            -
+            </td>
+            <td class="text-left" data-title="訪視人員">陳欽盛老師</td>
+            <td class="text-left" data-title="賃居地址">台北市中山區南京東路1段96號9-5樓A室</td>
+            <td class="text-left" data-title="狀態">未完成</td>
+            <td class="text-left" data-title="訪評結果">
+              -     
+            </td>
+            <td class="text-left" data-title="複查結果">-</td>
+          </tr>
+
+           <tr>
+            <td class="text-left" data-title="學年度">103/2</td>
+            <td class="text-left" data-title="日期">104/6/17</td>
+            <td class="text-left" data-title="約訪時間">
+            17:00~17:30
+            </td>
+            <td class="text-left" data-title="訪視人員">陳欽盛老師</td>
+            <td class="text-left" data-title="賃居地址">台北市信義區吳興街269巷1弄15號5樓  </td>
+            <td class="text-left" data-title="狀態">未完成</td>
+            <td class="text-left" data-title="訪評結果">
+              -     
+            </td>
+            <td class="text-left" data-title="複查結果">-</td>
+          </tr>
+
+          <tr>
+            <td class="text-left" data-title="學年度">103/2</td>
+            <td class="text-left" data-title="日期">104/6/17</td>
+            <td class="text-left" data-title="約訪時間">
+            17:00~17:30
+            </td>
+            <td class="text-left" data-title="訪視人員">陳欽盛老師</td>
+            <td class="text-left" data-title="賃居地址">台北市信義區吳興街269巷1弄15號5樓  </td>
+            <td class="text-left" data-title="狀態">未完成</td>
+            <td class="text-left" data-title="訪評結果">
+              -     
+            </td>
+            <td class="text-left" data-title="複查結果">-</td>
+          </tr>
+
+          <tr>
+            <td class="text-left" data-title="學年度">103/2</td>
+            <td class="text-left" data-title="日期">
+            <a href="visit_check.html">104/4/17</a></td>
+            <td class="text-left" data-title="約訪時間">
+            17:00~17:30
+            </td>
+            <td class="text-left" data-title="訪視人員">陳欽盛老師</td>
+            <td class="text-left" data-title="賃居地址">台北市信義區吳興街269巷1弄15號5樓  </td>
+            <td class="text-left" data-title="狀態">已完成</td>
+            <td class="text-left" data-title="訪評結果">
+              不合格<br class="hide-for-small-only">
+              <a href="reply_edit.html">填寫回條</a>    
+            </td>
+            <td class="text-left" data-title="複查結果">-</td>
+          </tr>
+
+          <tr>
+            <td class="text-left" data-title="學年度">103/2</td>
+            <td class="text-left" data-title="日期">
+            <a href="visit_check.html">104/4/18</a></td>
+            <td class="text-left" data-title="約訪時間">
+            17:00~17:30
+            </td>
+            <td class="text-left" data-title="訪視人員">陳欽盛老師</td>
+            <td class="text-left" data-title="賃居地址">台北市信義區吳興街220巷69號3樓</td>
+            <td class="text-left" data-title="狀態">已完成</td>
+            <td class="text-left" data-title="訪評結果">
+              不合格<br class="hide-for-small-only">
+              <a href="reply_edit.html">填寫回條</a>    
+            </td>
+            <td class="text-left" data-title="複查結果">-</td>
+          </tr>
+
+
+        </tbody>
+        </table>
+      </div>
+  </div>
+
+
+
+
+  </div>
+
+ <!--  <div class="row text-center">     
+        <div class="small-12 columns">
+             <a class="button M-B-20" href="javascript:;">送出</a>
+             <a class="button btn-G M-B-20" href="javascript:;">暫存資料</a>
+             <a class="button btn-G M-B-20" href="javascript:;">返回列表</a>
+             <a class="button btn-G" href="javascript:;">清除重填</a>
+         </div>
+     </div> -->
+
+
+  <!-- contain結束 -->
+</div>
+<script src="js/vendor/foundation-datepicker.min.js"></script>
+    <script>
+      $(function () {
+        window.prettyPrint && prettyPrint();
+        $('#dp1').fdatepicker({
+          format: 'yyyy-mm-dd',
+          disableDblClickSelection: true
+        });
+       
+  
+        // implementation of disabled form fields
+        // var nowTemp = new Date();
+        // var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        // var checkin = $('#dpd1').fdatepicker({
+        //   onRender: function (date) {
+        //     return date.valueOf() < now.valueOf() ? 'disabled' : '';
+        //   }
+        // }).on('changeDate', function (ev) {
+        //   if (ev.date.valueOf() > checkout.date.valueOf()) {
+        //     var newDate = new Date(ev.date)
+        //     newDate.setDate(newDate.getDate() + 1);
+        //     checkout.update(newDate);
+        //   }
+        //   checkin.hide();
+        //   $('#dpd2')[0].focus();
+        // }).data('datepicker');
+        // var checkout = $('#dpd2').fdatepicker({
+        //   onRender: function (date) {
+        //     return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+        //   }
+        // }).on('changeDate', function (ev) {
+        //   checkout.hide();
+        // }).data('datepicker');
+      });
+    </script>
+
+   
+
+<footer class="footer">
+    <ul class="nav-footer inline-list">
+            <li><a target="_blank" href="http://rent.tmu.edu.tw/admin/index_login.php">管理平台</a></li>
+            <li><a href="news_list.html">最新消息</a></li>            
+            <li><a target="_blank" href="http://depsys.tmu.edu.tw/evaluate/Login.aspx">長官專區</a></li>
+            <li><a href="member.html">會員專區</a></li>
+
+            <li><a href="rent_list.html">租賃物件</a></li>
+            <li><a href="contact_us.html">聯絡我們</a></li>            
+            <li><a href="site_map.html">網站地圖</a></li>
+            <li><a target="_blank" href="http://rent.tmu.edu.tw/school_safety_login.php">校安工作平台</a></li>
+
+            <li><a target="_blank" href="http://www.tmu.edu.tw/v3/main.php">臺北醫學大學</a></li>
+    </ul>
+
+    <p>Copyright © 2015 臺北醫學大學賃居服務網 版權所有 轉載必究</p>
+</footer>
+
+  </body>
+</html>

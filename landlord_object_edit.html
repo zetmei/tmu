@@ -1,0 +1,888 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>北醫賃居資訊服務網</title>
+
+<!--CSS
+================================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/all.css">
+
+<!--IE8支援支援HTML5
+================================================== -->
+<!--[if lt IE 9]>
+<script src="js/vendor/html5shiv.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+<![endif]-->
+
+<!--JS
+================================================== -->
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" ></script>  
+  <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/foundation.min.js"></script> 
+  <script src="js/layout.js"></script> 
+  <script src="js/page.js"></script> 
+</head>
+<body>
+
+<header class="header"> 
+<div class="header-top">   
+    <div class="row">
+      <div class="large-12 columns">
+          <!-- side選單 -->
+          <ul class="nav-second inline-list">
+            <li class="sign-in"><a href="javascript:;" data-reveal-id="myModal">登入<i class="fa fa-sign-in icon_font"></i></a></li>
+            <li><a href="../en/index.html">English</a></li>            
+            <li><a href="site_map.html">網站地圖</a></li>
+            <li><a target="_blank" href="http://www.tmu.edu.tw/v3/main.php">臺北醫學大學</a></li>
+          </ul>
+      </div>
+    </div>
+</div>
+
+<!-- 光箱-登入 -->
+<div id="myModal" class="reveal-modal full reveal-modal-login" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div class="modal-login">
+        <div class="row small-collaps">
+            <div class="medium-12 columns">
+                <h3 class="title-modal title-05">登入                    
+                </h3>
+
+                <input type="text" placeholder="帳號">
+                <input type="text" placeholder="密碼">
+
+                <div class="row check_code">
+                    <div class="small-5 columns">
+                         <input class="inline" type="text" placeholder="驗證碼">
+                    </div>
+                    <div class="small-5 columns">
+                         <img class="inline" src="images/icon/check_code.png">
+                    </div>
+                    <div class="small-2 columns">
+                         <a href="javascript:;"><i class="fa fa-refresh"></i></a>
+                    </div>
+                </div>
+
+                <a class="button btn-full" href="newslist.html">登入</a>
+
+                <div class="align-center text-center">或</div>
+
+                <a class="button btn-full btn-red" href="newslist.html">
+                <i class="fa fa-google-plus"></i>
+                使用Google帳號登入</a>
+
+                <!-- <hr class="hr_opacity"> -->
+                
+                <div class="align-center text-center bottom_txt">
+                    <a href="javascript:;">申請房東帳號</a>
+                    <a href="javascript:;">忘記密碼</a>
+                </div>
+
+
+            </div>
+            <div class="medium-12 columns">
+            </div>
+        </div>
+    </div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+</div>
+
+<div class="header-bottom">   
+    <div class="row collapse">
+      <div class="large-12 columns">
+         <!-- logo -->
+         <div class="logo"><a href="index.html"></a></div>
+         <!-- icon主選單 -->
+        <div class="nav-primary icon-bar five-up show-for-large-up">
+          <a class="item" href="news_list.html">
+            <i class="fa fa-bullhorn icon_font"></i>
+            <label>最新消息</label>
+          </a>
+          <a class="item" href="rent_list.html">
+            <i class="fa fa-home icon_font"></i>
+            <label>租賃物件</label>
+          </a>
+          <a class="item" target="_blank" href="http://my2.tmu.edu.tw/site/houseservice">
+            <i class="fa fa-comment icon_font"></i>
+            <label>討論區</label>
+          </a>
+          <a class="item" href="visit_list.html">
+            <i class="fa fa-key icon_font"></i>
+            <label>訪視行程</label>
+          </a>
+          <a class="item" href="visit_list_tutor.html">
+            <i class="fa fa-book icon_font"></i>
+            <label>導師專區</label>
+          </a>
+          <a class="item active" href="landlord_object.html">
+            <i class="fa fa-folder-open icon_font"></i>
+            <label>房東專區</label>
+          </a>
+          <a class="item" href="contact_us.html">
+            <i class="fa fa-paper-plane icon_font"></i>
+            <label>聯絡我們</label>
+          </a>
+        </div>
+
+        <!-- 手機menu icon -->
+        <a href="javascript:;" class="menu-icon hide-for-large-up">Menu</a>
+        
+
+
+      </div>
+    </div>
+</div>
+</header>
+
+<!-- 手機主選單 -->
+        <div class="nav-mobile">
+          <a class="item" href="news_list.html">最新消息
+          </a>
+          <a class="item" href="rent_list.html">租賃物件
+          </a>
+          <a class="item" target="_blank" href="http://my2.tmu.edu.tw/site/houseservice">討論區
+          </a>
+          <a class="item" href="visit_list.html">訪視行程
+          </a>
+          <a class="item" href="visit_list_tutor.html">導師專區
+          </a>
+          <a class="item" href="visit_record.html">我的資料
+          </a>
+          <a class="item" href="contact_us.html">聯絡我們
+          </a>
+        </div>
+
+
+ 
+<!-- 主視覺 -->
+<div class="mainvision show-for-large-up">        
+        <img class="img-responsive" data-interchange="[images/banner/inside01.png,(default)], [images/banner/banner01_600w.png,(small)], [images/banner/banner01_600w.png,(medium)], [images/banner/inside01.png,(large)]">    
+</div>
+
+<!-- 每頁內容置換 -->
+<div class="contain"> 
+
+  <!-- 內頁標題 -->
+  <div class="row">     
+      <div class="small-12 columns">
+          <h3 class="title-page title-24">租賃物件編修
+
+          </h3>
+          
+      </div>
+  </div>
+
+  <div class="row form-inline">
+    <div class="medium-12 large-12 columns">
+
+                          <div class="row collapse">
+                              <div class="medium-12 columns">
+                                <p>本房東您好，請詳實填寫以下租屋資訊：</p>
+                              </div>
+                          </div>
+
+                          <div class="row collapse">   
+                              <div class="medium-1 columns">
+                                <span class="label_txt"><strong>出租狀況：</strong></span>
+                              </div> 
+                     
+                              <div class="medium-10 columns end">
+                                <span class="label_txt">
+                                    <input type="radio" name="pokemon" value="Red" id="method1">
+                                    <label for="method1">已出租</label>
+                                    <input type="radio" name="pokemon" value="Red" id="method2">
+                                    <label for="method2">未出租</label>
+                              </span>
+                            </div>
+
+                            </div>
+
+                           <div class="row collapse">
+                              <div class="medium-12 columns">
+                               <h5 class="f-title">一、圖片上傳</h5>
+                               <p>上傳照片：*最多上傳4張照片，尺寸x單一檔案10mb以下</p>
+                               </div>
+                          </div>
+
+                                <div class="row collapse">
+                                  <div class="medium-2 columns">
+                                      <label for="fileField"></label>
+                                      <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                                  </div>
+                                   <div class="medium-2 columns end">
+                                      <input id="checkbox1" type="checkbox">
+                                      <label for="checkbox1">刪除</label>
+                                  </div>
+                                </div>
+                                <div class="row collapse">
+                                  <div class="medium-2 columns">
+                                      <label for="fileField"></label>
+                                      <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                                  </div>
+                                   <div class="medium-2 columns end">
+                                      <input id="checkbox2" type="checkbox">
+                                      <label for="checkbox2">刪除</label>
+                                  </div>
+                                </div>
+                                <div class="row collapse">
+                                  <div class="medium-2 columns">
+                                      <label for="fileField"></label>
+                                      <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                                  </div>
+                                   <div class="medium-2 columns end">
+                                      <input id="checkbox3" type="checkbox">
+                                      <label for="checkbox3">刪除</label>
+                                  </div>
+                                </div>
+                                <div class="row collapse">
+                                  <div class="medium-2 columns">
+                                      <label for="fileField"></label>
+                                      <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                                  </div>
+                                   <div class="medium-2 columns end">
+                                      <input id="checkbox4" type="checkbox">
+                                      <label for="checkbox4">刪除</label>
+                                  </div>
+                                </div>
+
+                           <div class="row collapse">
+                              <div class="medium-12 columns">
+                                   <h5 class="f-title">二、基本資料</h5>
+                               </div>
+                          </div>
+
+                           <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">物件標題：</span>
+                              </div> 
+                     
+                              <div class="medium-4 large-6 columns end">
+                                  <span class="label_block">
+                                    <input type="text">
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse address_adjust">
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">聯絡地址：</span>
+                              </div>
+                              <div class="medium-3 large-2 columns end">
+                                 <span class="label_block">
+                                  <select>
+                                    <option value="09:00~09:30">台北市</option>
+                                    <option value="09:30~10:00">台北市</option>
+                                    <option value="10:00~10:30">台北市</option>
+                                  </select>
+                                </span>   
+                              </div>
+                              <div class="medium-3 large-2 columns end">
+                                  <span class="label_block">
+                                  <select>
+                                    <option value="09:00~09:30">中山區</option>
+                                    <option value="09:30~10:00">中山區</option>
+                                    <option value="10:00~10:30">中山區</option>
+                                  </select>
+                                </span>
+                              </div>
+                              <div class="medium-4 large-2 columns end">
+                                   <span class="label_block">
+                                    <select>
+                                      <option value="09:00~09:30">南京東路一段</option>
+                                      <option value="09:30~10:00">南京東路一段</option>
+                                      <option value="10:00~10:30">南京東路一段</option>
+                                    </select>
+                                  </span>
+                              </div>
+                              <div class="medium-10 large-5 columns address_A">
+                                <span class="label_block">
+                                    <input class="small" type="text">巷
+                                    <input class="small" type="text">弄
+                                    <input class="small" type="text" value="96">號之
+                                    <input class="small" type="text" value="9">樓之
+                                    <input class="small" type="text" value="A">室
+                                </span>
+                            </div>
+                          </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">租金：</span>
+                              </div>                      
+                              <div class="medium-10 large-11 columns end">
+                                  <span class="label_block">
+                                    <input type="radio" name="pokemon" value="Red" id="m01">
+                                    <label for="m01">每月</label>
+                                    <input type="radio" name="pokemon" value="Red" id="m02">
+                                    <label for="m02">每學期</label>
+
+                                    <input class="small-100" type="text">元
+                                  </span>                
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">押金：</span>
+                              </div>                      
+                              <div class="medium-10 large-11 columns end">
+                                  <span class="label_block">
+                                    <input class="small-200" type="text">元
+                                  </span>                
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">其他費用：</span>
+                              </div>                      
+                              <div class="medium-10 large-11 columns end">
+                                  <span class="label_block">
+                                    <input class="small-200" type="text">元
+                                  </span>                
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">建物樓層：</span>
+                              </div>                      
+                              <div class="medium-10 large-11 columns end">
+                                  <span class="label_block">
+                                    樓&nbsp;<input class="small-200" type="text">層（例：6/2 )
+                                  </span>                
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">坪數：</span>
+                              </div>                      
+                              <div class="medium-10 large-11 columns end">
+                                  <span class="label_block">
+                                    <input class="small-200" type="text">坪
+                                  </span>                
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">房型：</span>
+                              </div>                      
+                              <div class="medium-10 large-5 columns end">
+                                 <span class="label_txt">
+                                    <span class="block">
+                                      <input type="radio" name="Q1" id="Q1_A" checked>
+                                      <label for="Q1_A">公寓/大樓</label>
+                                    </span>
+                                    <span class="block">
+                                      <input type="radio" name="Q1" id="Q1_B">
+                                      <label for="Q1_B">整層出租</label>
+                                    </span>                    
+                                    <span class="block">
+                                      <input type="radio" name="Q1" id="Q1_C">
+                                      <label for="Q1_C">套房</label>
+                                    </span>
+                                    <span class="block">
+                                      <input type="radio" name="Q1" id="Q1_D">
+                                      <label for="Q1_D">雅房</label>
+                                    </span>
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">隔間：</span>
+                              </div>                      
+                              <div class="medium-10 large-5 columns end">
+                                 <span class="label_block">
+                                    <span class="block">
+                                      <input type="radio" name="Q3" id="Q3_A" checked>
+                                      <label for="Q3_A">木板</label>
+                                    </span>
+                                    <span class="block">
+                                      <input type="radio" name="Q3" id="Q3_B">
+                                      <label for="Q3_B">水泥</label>
+                                    </span>                    
+                                    <span class="block">
+                                      <input type="radio" name="Q3" id="Q3_C">
+                                      <label for="Q3_C">其他</label>
+                                      <input class="small-100" type="text">
+                                    </span>
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">性別限制：</span>
+                              </div>                      
+                              <div class="medium-10 large-5 columns end">
+                                 <span class="label_txt">
+                                    <span class="block">
+                                      <input type="radio" name="Q4" id="Q4_A" checked>
+                                      <label for="Q4_A">男</label>
+                                    </span>
+                                    <span class="block">
+                                      <input type="radio" name="Q4" id="Q4_B">
+                                      <label for="Q4_B">女</label>
+                                    </span>                    
+                                    <span class="block">
+                                      <input type="radio" name="Q4" id="Q4_C">
+                                      <label for="Q4_C">無限制</label>
+                                    </span>
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">獨立電表：</span>
+                              </div>                      
+                              <div class="medium-10 large-5 columns end">
+                                 <span class="label_txt">
+                                    <span class="block">
+                                      <input type="radio" name="Q5" id="Q5_A" checked>
+                                      <label for="Q5_A">有</label>
+                                    </span>
+                                    <span class="block">
+                                      <input type="radio" name="Q5" id="Q5_B">
+                                      <label for="Q5_B">無</label>
+                                    </span>  
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">描述介紹：</span>
+                              </div> 
+                     
+                              <div class="medium-10 large-11 columns end">
+                                  <span class="label_block">
+                                    <textarea></textarea>
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">住屋認證：</span>
+                              </div>                      
+                              <div class="medium-10 large-11 columns end">
+                                 <div class="row collapse check_control">   
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q6" id="Q6_A">
+                                            <label for="Q6_A">住屋安全認證</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q6" id="Q6_B">
+                                            <label for="Q6_B">愛心房東表揚</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q6" id="Q6_C">
+                                            <label for="Q6_C">年度</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q6" id="Q6_D">
+                                            <label for="Q6_D">消防檢驗合格</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q6" id="Q6_E">
+                                            <label for="Q6_E">其他</label>
+                                            <input class="small-100" type="text">
+                                          </span>
+                                    </div>                                    
+                                </div>             
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">安全措施：</span>
+                              </div>                      
+                              <div class="medium-10 large-11 columns end">
+                                 <div class="row collapse check_control">   
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_A">
+                                            <label for="Q7_A">門禁系統</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_B">
+                                            <label for="Q7_B">滅火器</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_C">
+                                            <label for="Q7_C">偵煙設備</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_D">
+                                            <label for="Q7_D">消防系統</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_E">
+                                            <label for="Q7_E">逃生梯</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_F">
+                                            <label for="Q7_F">緩降梯</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_G">
+                                            <label for="Q7_G">照明設備</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_H">
+                                            <label for="Q7_H">監視錄影設備(系統)</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_I">
+                                            <label for="Q7_I">瓦斯熱水器強制排氣設備</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_J">
+                                            <label for="Q7_J">其他</label>
+                                            <input class="small-100" type="text">
+                                          </span>
+                                    </div>
+                                </div>             
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">屋內設備：</span>
+                              </div>                      
+                              <div class="medium-10 large-11 columns end">
+                                 <div class="row collapse check_control">   
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_A">
+                                            <label for="Q7_A">天然瓦斯</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_B">
+                                            <label for="Q7_B">桶裝瓦斯</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_C">
+                                            <label for="Q7_C">瓦斯熱水(屋外) </label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_D">
+                                            <label for="Q7_D">瓦斯熱水器(屋內) </label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_E">
+                                            <label for="Q7_E">電熱水器</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_F">
+                                            <label for="Q7_F">電視機</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_G">
+                                            <label for="Q7_G">電冰箱</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_H">
+                                            <label for="Q7_H">冷氣機</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_I">
+                                            <label for="Q7_I">中央空調</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_J">
+                                            <label for="Q7_J">洗衣機</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_K">
+                                            <label for="Q7_K">脫水機</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_L">
+                                            <label for="Q7_L">烘衣機</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_M">
+                                            <label for="Q7_M">衣櫃</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_N">
+                                            <label for="Q7_N">床鋪</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_O">
+                                            <label for="Q7_O">書櫃</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_P">
+                                            <label for="Q7_P">書桌(椅) </label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_Q">
+                                            <label for="Q7_Q">檯燈</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_R">
+                                            <label for="Q7_R">寬頻網路</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_S">
+                                            <label for="Q7_S">第四台</label>
+                                          </span>
+                                    </div>
+                                    <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_T">
+                                            <label for="Q7_T">電話</label>
+                                          </span>
+                                    </div>
+                                     <div class="medium-8 large-3 columns end">  
+                                          <span class="label_txt">
+                                            <input type="checkbox" name="Q7" id="Q7_U">
+                                            <label for="Q7_U">其他</label>
+                                            <input class="small-100" type="text">
+                                          </span>
+                                    </div>   
+                                </div>             
+                              </div>
+                            </div>
+
+                           
+                            
+
+                            <h5 class="f-title">三、聯絡資訊</h5>
+
+                            <!-- 房東 -->
+                            <div class="row collapse">   
+                              <div class="medium-12 large-12 columns">
+                                 <h5 class="j-title"><i class="fa fa-key"></i>房東</h5>
+                              </div>                      
+                            </div>
+                           
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">姓名：</span>
+                              </div> 
+                     
+                              <div class="medium-4 large-2 columns end">
+                                  <span class="label_block">
+                                    <input type="text">
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">手機：</span>
+                              </div> 
+                     
+                              <div class="medium-4 large-2 columns end">
+                                  <span class="label_block">
+                                    <input type="text">
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">市內電話：</span>
+                              </div> 
+                     
+                              <div class="medium-4 large-2 columns end">
+                                  <span class="label_block">
+                                    <input type="text">
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">證明文件：</span>
+                              </div> 
+                     
+                              <div class="medium-10 large-11 columns end">
+                                  <div class="row collapse label_txt">
+                                      <div class="medium-2 columns">
+                                          <label for="fileField"></label>
+                                          <input type="file" class="data_adjust10" name="fileField" id="fileField">
+                                      </div>
+                                       <div class="medium-2 columns end">
+                                          <input id="checkbox5" type="checkbox">
+                                          <label for="checkbox5">刪除</label>
+                                      </div>
+                                </div>                
+                              </div>
+                            </div>
+
+                            <!-- 聯絡人 -->
+                             <div class="row collapse">   
+                              <div class="medium-12 large-12 columns">
+                                 <h5 class="j-title"><i class="fa fa-phone"></i>聯絡人</h5>
+                              </div>                      
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">姓名：</span>
+                              </div> 
+                     
+                              <div class="medium-4 large-2 columns end">
+                                  <span class="label_block">
+                                    <input type="text">
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">手機：</span>
+                              </div> 
+                     
+                              <div class="medium-4 large-2 columns end">
+                                  <span class="label_block">
+                                    <input type="text">
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">市內電話：</span>
+                              </div> 
+                     
+                              <div class="medium-4 large-2 columns end">
+                                  <span class="label_block">
+                                    <input type="text">
+                                  </span>                 
+                              </div>
+                            </div>
+
+                            <div class="row collapse">   
+                              <div class="medium-2 large-1 columns">
+                                <span class="label_txt">房東關係：</span>
+                              </div> 
+                     
+                               <div class="medium-4 large-2 columns end">
+                                  <span class="label_block">
+                                    <input type="text">
+                                  </span>                 
+                              </div>
+                            </div>
+
+
+
+                          
+  
+                        </div>
+                       
+
+    </div>
+    <div class="row text-center">     
+                            <div class="small-12 columns">
+                                 <a class="button M-B-20" href="landlord_object.html">送出</a>
+                                 <a class="button btn-G" href="javascript:;">清除重填</a>
+                             </div>
+    </div> 
+
+
+  </div>
+
+  <!-- contain結束 -->
+</div>
+   
+
+<footer class="footer">
+    <ul class="nav-footer inline-list">
+            <li><a target="_blank" href="http://rent.tmu.edu.tw/admin/index_login.php">管理平台</a></li>
+            <li><a href="news_list.html">最新消息</a></li>            
+            <li><a target="_blank" href="http://depsys.tmu.edu.tw/evaluate/Login.aspx">長官專區</a></li>
+            <li><a href="member.html">會員專區</a></li>
+
+            <li><a href="rent_list.html">租賃物件</a></li>
+            <li><a href="contact_us.html">聯絡我們</a></li>            
+            <li><a href="site_map.html">網站地圖</a></li>
+            <li><a target="_blank" href="http://rent.tmu.edu.tw/school_safety_login.php">校安工作平台</a></li>
+
+            <li><a target="_blank" href="http://www.tmu.edu.tw/v3/main.php">臺北醫學大學</a></li>
+    </ul>
+
+    <p>Copyright © 2015 臺北醫學大學賃居服務網 版權所有 轉載必究</p>
+</footer>
+
+  </body>
+</html>

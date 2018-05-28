@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>北醫賃居資訊服務網</title>
+
+<!--CSS
+================================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <!-- 單頁plus結束 -->  
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/all.css">  
+  
+
+<!--IE8支援支援HTML5
+================================================== -->
+<!--[if lt IE 9]>
+<script src="js/vendor/html5shiv.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+<![endif]-->
+
+<!--JS
+================================================== -->
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" ></script>  
+  <script src="js/vendor/jquery.touchSwipe.min.js"></script>
+  <script src="js/vendor/jquery.easing.1.3.js"></script>
+  <script src="js/vendor/foundation.min.js"></script> 
+  <script src="js/layout.js"></script> 
+  <script src="js/page.js"></script> 
+</head>
+<body>
+<div class="row">
+  <div class="small-12 columns">
+
+        <h3>＊給工程師的訊息</h3>
+        <p>
+        這外掛是使用JSON撈日期進來的，每個日子上發都會有class的當日命名，如下
+        < td class="day past calendar-day-2015-08-04 calendar-dow-2" >
+        原本我是想說用日期的class抓日子，再分別寫入光箱的html，但不知這樣的想法程式是否可行。<br>
+        因為我也不確定用這外掛方不方便後端去套程式，如果程式這樣其實無法使用的話，我這邊看是否是改用<a href="http://myleage.begonia.tw/member_cal.html">純靜態</a>的月曆，撈日期等等交由後端去一起寫，這樣是不是會比較乾淨清楚呢。
+
+        </p>
+
+        <h3>＊光箱範例如下</h3>
+        <p>光箱的位置：放body內一層即可，a標籤與光箱只要data-reveal-id與id名稱相符即可成功。
+        <br>a標籤中的>>>>>data-reveal-id="lightbox_0001呼叫光箱，
+        <br>光箱< div >只要改動父層的>>>>id="lightbox_0001"即可。<br>
+        不知這樣的寫法是否方便程式去操控。
+        </p>
+
+        <a class="time_event" href="#" data-reveal-id="lightbox_0001">第一個光箱</a>
+        <a class="time_event" href="#" data-reveal-id="lightbox_0002">第二個光箱</a>
+
+
+
+
+  </div>
+</div>
+
+
+          <!-- 預約光箱 -->
+<div id="lightbox_0001" class="reveal-modal calender_modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+             <div class="row time_select">     
+                <div class="small-12 columns">
+                      第一個光箱
+              </div>
+            </div>
+</div>
+
+<div id="lightbox_0002" class="reveal-modal calender_modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+             <div class="row time_select">     
+                <div class="small-12 columns">
+                      第二個光箱
+              </div>
+            </div>
+</div>
+
+
+
+
+  <script src="js/vendor/clndr_json2.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script src= "js/vendor/clndr_moment-2.8.3.js"></script>
+  <script src="js/vendor/clndr.js"></script>
+  <script>
+  var clndr = {};
+
+$( function() {
+    //月曆樣板設定
+    var clndrTemplateA = "<div class='clndr-controls'>" +
+    "<div class='clndr-control-button'><span class='clndr-previous-button'><<</span></div><div class='month'><%= month %> <%= year %></div><div class='clndr-control-button rightalign'><span class='clndr-next-button'>>></span></div>" +
+    "</div>" +
+    "<table class='clndr-table' border='0' cellspacing='0' cellpadding='0'>" +
+    "<thead>" +
+    "<tr class='header-days'>" +
+    "<% for(var i = 0; i < daysOfTheWeek.length; i++) { %>" +
+      "<td class='header-day'><%= daysOfTheWeek[i] %></td>" +
+    "<% } %>" +
+    "</tr>" +
+    "</thead>" +
+    "<tbody>" +
+    "<% for(var i = 0; i < numberOfRows; i++){ %>" +
+      "<tr>" +
+      "<% for(var j = 0; j < 7; j++){ %>" +
+      "<% var d = j + i * 7; %>" +
+      "<td class='<%= days[d].classes %>'><div class='day-contents'><%= days[d].day %>" +
+
+      "</div><a class='time_event' href='#'' data-reveal-id='modal_time'><span class='dispear-681'>開放</span><span class='time_event_num'>5</span><span class='dispear-681'>個時段</span></a><a class='reserve_event show_data_box' href='javascript:;'><span class='dispear-681'>目前</span><span class='reserve_event_num'>3</span><span class='dispear-681'>筆預約</span></a></td>" +
+      "<% } %>" +
+      "</tr>" +
+    "<% } %>" +
+    "</tbody>" +
+  "</table>";
+
+
+  // pass in events(事件日曆)
+  // ================================================================================
+  clndr.passInEvents = $('#visit-clndr').clndr({
+
+      template: clndrTemplateA,
+      daysOfTheWeek: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
+      clickEvents: {
+        click: function(target){console.info("Im HERE"+$(this).html()); },
+        // fired when a user goes forward a month. returns a moment.js object set to the correct month.
+        nextMonth: function(month){ console.info("Im HERE"+$(this).html());},
+        // fired when a user goes back a month. returns a moment.js object set to the correct month.
+        previousMonth: function(month){ console.info("Im HERE"+$(this).html());}
+      }
+
+
+    });
+
+
+  //結束
+});
+
+
+
+
+$(function(){
+          $('body').on('click', '.show_data_box',function() {
+                 console.info("Im HERE"+$(this).html());
+                  $('.data_box').fadeIn(0);
+                  $("html, body").animate({ scrollTop: $('.data_box').offset().top }, 1000);
+
+          });
+  //結束
+});
+
+  </script>  
+  <!--<script src="http://localhost:35729/livereload.js"></script> -->
+  </body>
+</html>

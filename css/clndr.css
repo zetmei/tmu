@@ -1,0 +1,380 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:800,700);
+
+.cal1 {
+  margin: 30px auto;
+  max-width: 100%;
+  font-size: 14px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.cal1 .clndr .clndr-controls {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+/*月曆抬頭*/
+.cal1 .clndr .clndr-controls .month {
+  float: left;
+  width: 33%;
+  text-align: center;
+  font-size: 30px;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button {
+  float: left;
+  width: 33%;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button.rightalign {
+  text-align: right;
+  width: 34%;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+  cursor: pointer;
+  font-size: 25px;
+    color: #A5A5A5;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover {
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive {
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+  cursor: pointer;
+  font-size: 25px;
+    color: #A5A5A5;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive {
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive:hover {
+}
+
+/*月曆星期幾th*/
+.cal1 .clndr .clndr-table {
+  table-layout: fixed;
+  width: 100%;
+}
+.cal1 .clndr .clndr-table .header-days {
+/*  height: 30px;
+  font-size: 10px;
+  background: #0D70A6;*/
+}
+.cal1 .clndr .clndr-table .header-days .header-day {
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: #666666;
+  color: #fff;
+}
+.cal1 .clndr .clndr-table .header-days .header-day:last-child {
+/*  border-right: 1px solid #000000;*/
+}
+/*月曆每天小格子*/
+.cal1 .clndr .clndr-table tr {
+}
+.cal1 .clndr .clndr-table tr td {
+}
+.cal1 .clndr .clndr-table tr .day {
+    padding: 10px 1rem;
+
+}
+.cal1 .clndr .clndr-table tr .day:hover {
+  background: #eee;
+}
+.cal1 .clndr .clndr-table tr .day.today,
+.cal1 .clndr .clndr-table tr .day.my-today {
+  background: rgba(97, 189, 216, 0.13);
+  /*border: 3px solid rgba(97, 189, 216, 0.36);*/
+}
+.cal1 .clndr .clndr-table tr .day.today:hover,
+.cal1 .clndr .clndr-table tr .day.my-today:hover {
+  /*background: #72c6d8;*/
+}
+.cal1 .clndr .clndr-table tr .day.today.event,
+.cal1 .clndr .clndr-table tr .day.my-today.event {
+ /* background: #a7dbc1;*/
+}
+.cal1 .clndr .clndr-table tr .day.event,
+.cal1 .clndr .clndr-table tr .day.my-event {
+  /*background: #B4E09F;*/
+}
+.cal1 .clndr .clndr-table tr .day.event:hover,
+.cal1 .clndr .clndr-table tr .day.my-event:hover {
+  /*background: #96d478;*/
+}
+.cal1 .clndr .clndr-table tr .day.inactive,
+.cal1 .clndr .clndr-table tr .day.my-inactive {
+  /*background: #ddd;*/
+}
+.cal1 .clndr .clndr-table tr .day:last-child {
+}
+.cal1 .clndr .clndr-table tr .day .day-contents {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #666;
+}
+/*前後個月*/
+.cal1 .clndr .clndr-table tr .empty,
+.cal1 .clndr .clndr-table tr .adjacent-month,
+.cal1 .clndr .clndr-table tr .my-empty,
+.cal1 .clndr .clndr-table tr .my-adjacent-month {
+}
+.cal1 .clndr .clndr-table tr .empty .day-contents,
+.cal1 .clndr .clndr-table tr .adjacent-month .day-contents,
+.cal1 .clndr .clndr-table tr .my-empty .day-contents,
+.cal1 .clndr .clndr-table tr .my-adjacent-month .day-contents{
+  color: #E0E0E0;
+}
+.cal1 .clndr .clndr-table tr .empty:last-child,
+.cal1 .clndr .clndr-table tr .adjacent-month:last-child,
+.cal1 .clndr .clndr-table tr .my-empty:last-child,
+.cal1 .clndr .clndr-table tr .my-adjacent-month:last-child {
+}
+.cal1 .clndr .clndr-table tr .empty:last-child .day-contents,
+.cal1 .clndr .clndr-table tr .adjacent-month:last-child .day-contents,
+.cal1 .clndr .clndr-table tr .my-empty:last-child .day-contents,
+.cal1 .clndr .clndr-table tr .my-adjacent-month:last-child .day-contents {
+  color: #E0E0E0;
+}
+
+.cal1 .clndr .clndr-table tr:last-child .day,
+.cal1 .clndr .clndr-table tr:last-child .my-day {
+ /* border-bottom: 1px solid #000000;*/
+}
+.cal1 .clndr .clndr-table tr:last-child .empty,
+.cal1 .clndr .clndr-table tr:last-child .my-empty {
+ /* border-bottom: 1px solid #000000;*/
+}
+/*月曆標題*/
+.cal2 {
+  max-width: 177px;
+  margin: 30px auto;
+  font-family: 'Droid Sans Mono';
+}
+.cal2 .clndr .clndr-controls {
+  display: block;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 3px;
+}
+.cal2 .clndr .clndr-controls .clndr-previous-button {
+  float: left;
+  width: 10%;
+  text-align: left;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.cal2 .clndr .clndr-controls .clndr-previous-button:hover {
+  background-color: #f4f4f4;
+}
+.cal2 .clndr .clndr-controls .month {
+  float: left;
+  width: 80%;
+  text-align: center;
+}
+.cal2 .clndr .clndr-controls .clndr-next-button {
+  float: left;
+  width: 10%;
+  text-align: right;
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.cal2 .clndr .clndr-controls .clndr-next-button:hover {
+  background-color: #f4f4f4;
+}
+.cal2 .clndr .clndr-grid {
+  text-align: center;
+  border: 1px solid #FF4545;
+  display: inline-block;
+}
+
+.cal2 .clndr .clndr-grid .header-day {
+  float: left;
+  width: 25px;
+  height: 25px;
+  background: #FF4545;
+}
+.cal2 .clndr .clndr-grid .day {
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+.cal2 .clndr .clndr-grid .day.event {
+  background-color: #B4E09F;
+}
+.cal2 .clndr .clndr-grid .day.today {
+  background-color: #E3C57F;
+}
+.cal2 .clndr .clndr-grid .empty,
+.cal2 .clndr .clndr-grid .adjacent-month {
+  float: left;
+  width: 25px;
+  height: 25px;
+  background: #ddd;
+}
+.cal2 .clndr .clndr-today-button {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.cal2 .clndr .clndr-today-button:hover {
+  background-color: #ddd;
+}
+.cal2 .multi-month-controls .quarter-button {
+  display: inline-block;
+  width: 25%;
+}
+.cal2 .multi-month-controls .quarter-button:hover {
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+.cal2 .day.inactive {
+  background-color: #aaa;
+}
+/*賃居內容*/
+.time_event,.reserve_event{
+  display:block;
+  color: #8C8C8C;
+}
+.time_event:hover,.reserve_event:hover{
+  color:#61BDD8;
+}
+.time_event_num{
+  font-weight: bold;
+  color:#9c9c9c;
+    padding: 0 5px;
+  font-size: 18px;
+}
+.reserve_event_num{
+  font-weight: bold;
+  color:#ffb138;
+    padding: 0 5px;
+  font-size: 18px;
+}
+/*************光箱*************/
+.calender_modal{
+  margin-top:40px;
+}
+.calender_modal .time_select a{
+  color: #61BDD8;
+  margin: 5px 0px 5px 0;
+  display: block;;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .dispear-681{
+    display: none;
+  }
+  .cal1 .clndr .clndr-table {
+    border: none;
+  }
+  /*週*/
+  .cal1 .clndr .clndr-table .header-days .header-day {
+    padding: 1rem 0;
+    text-align: center;
+    border: 1px solid #666;
+  }
+  /*日*/
+  .cal1 .clndr .clndr-table tr .day {
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    border-right: 1px solid #868686;
+    border-bottom: 1px solid #868686;
+    padding: 10px 2px;
+}
+  .cal1 .clndr .clndr-table tr .day:first-child{
+    border-left: 1px solid #868686;
+  }
+  /*預約時間*/
+  .time_event,.reserve_event{
+    width: 50px;
+    margin: 0 auto;
+  }
+  .time_event{
+    background:url(../images/icon/icon08.png) 0 3px no-repeat; 
+    background-size: 16px;
+    padding-left: 16px;
+  }
+  .reserve_event{
+    background:url(../images/icon/icon09.png) 0 3px no-repeat; 
+    background-size: 16px;
+    padding-left: 16px;
+  }
+}
+@media screen and (max-width: 681px) {
+  .calender_modal{
+    margin-top:20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  /*週*/
+  .cal1 .clndr .clndr-table .header-days .header-day {
+      font-size: 12px;
+  }
+  /*預約時間*/
+  .time_event, .reserve_event {
+      width: 35px;
+  }
+  .time_event {
+     background: transparent url("../images/icon/icon08.png") no-repeat scroll 0px 6px / 13px auto;
+    padding-left: 9px;
+    /*width: auto;*/
+    
+  }
+  .reserve_event{
+    background: transparent url("../images/icon/icon09.png") no-repeat scroll 0px 6px / 13px auto;
+    padding-left: 9px;
+    /*width: auto;*/
+  }
+  .time_event_num,.reserve_event_num {
+    padding: 0px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .cal1 .clndr .clndr-table tr .day {
+    padding: 10px 2px 0px;
+  }
+  table tr.even, table tr.alt, table tr:nth-of-type(2n) {
+      background:none;
+  }
+  .time_event, .reserve_event {
+      width: auto;
+  }
+}

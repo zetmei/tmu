@@ -1,0 +1,414 @@
+#dscalendar{
+position: relative;
+top: 75px;
+}
+.app_add{
+	position: relative;
+	z-index: 5;
+	left: -28px;
+}
+
+
+	.calender{
+	width: 600px;
+	
+	padding: 15px;
+	margin: auto;
+	overflow-y: auto;
+	position: relative;
+	top:-75px;
+}
+.event{
+	padding: 10px;
+	border-bottom: 1px dashed #eee;
+	color: #aaa;
+}
+.event h1{
+	font: 36px Century Gothic, Arial;
+	color: #555;
+	float: left;
+}
+.event h2{
+	font: 24px Century Gothic, Arial;
+	color: #888;
+	text-align: right;
+	padding-top: 12px;
+}
+.event p{
+	font: 14px Century Gothic, Arial;
+	clear: both;
+}
+.in{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.header{
+	height: 40px;
+	padding: 10px 10px 15px;
+	background: url('../images/headerBottom.png') repeat-x center bottom;
+}
+
+.searchHolder{
+	position: absolute;
+	margin: 2px 0 0 45px;
+}
+.home{
+	position: absolute;
+	width: 38px;
+	height: 38px;
+	background: #bbb url('../images/home.png') no-repeat center center;
+	border: 10px solid #fff;
+	margin-left: 30px;
+}
+
+.home:active{
+	margin: 1px 0 0 31px;
+}
+
+.arrowHolder{
+	position: absolute;
+	width: 315px;
+	margin: 5px 0 0 155px;
+}
+.arrow{
+	width: 24px;
+	height: 27px;
+	padding: 5px;
+	background: #fff no-repeat 12px 12px;
+	border-width: 0;
+}
+.arrow:hover{
+	background-position: 11px 11px;
+}
+.arrow:active{
+	background-position: 12px 12px;
+}
+.arrow.left{
+	background-image: url('../images/arrowLeft.png');
+	position: absolute;
+}
+.arrow.right{
+	background-image: url('../images/arrowRight.png');
+	float: right;
+}
+
+.monthYear{
+	width: 630px;
+	text-align: center;
+	font: 32px Century Gothic, Arial;
+	padding: 0;
+	margin: 0;
+}
+
+.clock{
+	position: absolute;
+	margin: 6px 0 0 520px;
+	font: 24px Agency FB;
+	color: #bbb;
+}
+
+.days div{
+	width: 85px;
+	float: left;
+	margin: 0 0 -1px;
+	padding: 4px 0 0;
+	text-align: center;
+	font: 12px Century Gothic, Arial;
+	color: #bbb;
+}
+.dates{
+	float: left;
+	width: 600px;
+}
+.dates div{
+	width: 78px;
+	height: 31px;
+	background: #fbfbfb;
+	border: 1px solid #f5f5f5;
+	float: left;
+	margin: 5px 0 0 5px;
+	padding: 12px 0;
+	text-align: center;
+	font: 24px Century Gothic, Arial;
+	color: #aaa;
+	cursor: default;
+}
+.dates div.date:hover{
+	width: 78px;
+	height: 35px;
+	padding: 8px 0 10px;
+	border-width: 2px;
+	font-size: 28px;
+	cursor: pointer;
+}
+.dates div.today{
+	background: #f5f5f5;
+	border-color: #ccc;
+	color: #555;
+	font-weight: bold;
+}
+.dates div.highlight{
+	background: #daebf5;
+	border-color: #5ae;
+	padding: 4px 0 20px;
+	color: #5ae;
+	cursor: pointer;
+	text-align: left;
+}
+.dates div p.number{
+	margin: 0;
+	width: 75px;
+	text-align: center;
+}
+.dates div.highlight:hover{
+	padding: 0 0 18px;
+}
+.dates div.highlight span{
+	position: absolute;
+	display: block;
+	width: 87px;
+	margin-top: -2px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.dates div.out{
+	background: #fff;
+	border: 1px solid #fff;
+	color: #d9d9d9;
+}
+
+#calenderModal{
+	display: none;
+}
+
+ #dateInfoBox{
+ 	border: 1px solid #ddd;
+	position: absolute;
+	display: none;
+	width:250px;
+	margin-left: -160px;
+	z-index: 3;
+	background:#FFFFFF;
+	padding: 10px 0px;
+	
+}
+#dateInfoBox h1{
+	font: 18px Century Gothic, Arial;
+	text-align: center;
+	margin: 0 0 20px;
+	color: #555;
+	margin-bottom: 5px;
+}
+#dateInfoBox h1:first-child{
+	cursor: move;
+}
+
+ #dateInfoBox a{
+	font: 12px Century Gothic, Arial;
+	text-align: center;
+	color: #aaa;
+	line-height:35px;
+	padding: 0 110px;
+}
+#dateInfoBox a:hover{
+	color:#48a5bf;
+	font-weight: bold;
+}
+#dateInfoBox p{
+	margin: 0 0 15px;
+	font: 12px Century Gothic, Arial;
+	color: #aaa;
+    color:black;
+    font-size:16px;
+}
+
+#dateInfoBox #dateInfoScroller .disabled 
+{
+    color:#aaa;
+}
+#dateInfoBox #dateInfoScroller input[type=checkbox] 
+{
+	visibility: hidden;
+}   
+#dateInfoBox #dateInfoScroller .squaredFour span 
+{
+    margin-left:20px;
+    font-size: 12px;
+}
+#dateInfoBox #dateInfoScroller .squaredFour span.student_booking{margin-left: 8px;}
+#dateInfoBox #dateInfoScroller .squaredFour span.student_booking a{
+	line-height:12px;
+	padding: 0 5px;
+}
+.squaredFour {
+	margin: 3px 0px;
+	position: relative;
+}
+
+.squaredFour label {
+	cursor: pointer;
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 0;
+	border-radius:2px;
+
+		background: #9cc2cb;
+
+	
+}
+
+.squaredFour label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 5px;
+	background: transparent;
+	top: 3px;
+	left: 3px;
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.squaredFour label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.5;
+}
+
+.squaredFour input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.squaredFour input[type=checkbox]:disabled + label 
+{
+    cursor:default;
+    background: #EEE;
+}
+.squaredFour input[type=checkbox]:disabled + label:after {
+	opacity: 0;
+}
+
+.cross {
+   width: 15px;
+   height: 15px;
+   position: relative;
+   right:20px;
+  -webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+	top:12px;
+float: right;
+}
+
+.cross:before, .cross:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #aaa;
+}
+.cross:hover::before,.cross:hover::after{
+  background: #9cc2cb;
+}
+
+.cross:before {
+  left: 50%;
+  width: 30%;
+  margin-left: 35%;
+  height: 100%;
+}
+
+.cross:after {
+  top: 50%;
+  height: 30%;
+  margin-top: -15%;
+  width: 100%;
+}
+
+/************************* PAGINATION **************************************/
+.paginationTG{
+float: left;
+font:11px Tahoma, Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+ color:#3d3d3d;
+margin-top: 20px;
+margin-left:auto;
+margin-right:auto;
+width:94%;
+padding:20px;
+padding-top: 0px;
+text-align: center;
+background-color: #fdfbf8;
+}
+
+.paginationTG ul{
+margin: 0;
+padding: 0;
+}
+
+.paginationTG li{
+list-style-type: none;
+display: inline;
+padding-bottom: 1px;
+}
+
+.paginationTG a, .paginationTG a:visited{
+padding: 5px 8px;
+text-decoration: none; 
+background-color: inherit;
+color: #0191D0;
+font-weight: bold;
+}
+
+.paginationTG a:hover, .paginationTG a:active{
+color: #ffffff;
+background-image: url(../images/pagination_bg.png);
+background-position: top center;
+background-repeat: no-repeat;
+text-decoration: none; 
+}
+
+.paginationTG li.currentpage{
+font-weight: bold;
+padding: 5px 9px;
+background-color: inherit;
+color: #ffffff;
+background-image: url(pagination_bg.png);
+background-position: top center;
+background-repeat: no-repeat;
+}
+
+.paginationTG li.disablepage{
+padding: 0 5px;
+border: 1px solid #929292;
+color: #929292;
+}
+
+.paginationTG li.lastpage,.paginationTG li.nextpage{
+	
+}
+
+.paginationTG li.lastpage a:hover,.paginationTG li.nextpage a:hover{
+	background-image: url(../images/pagination_bbg.png);
+}
+
+
+* html .paginationTG li.currentpage, * html .paginationTG li.disablepage{ /*IE 6 and below. Adjust non linked LIs slightly to account for bugs*/
+padding-right: 9px;
+padding-left: 9px;
+}

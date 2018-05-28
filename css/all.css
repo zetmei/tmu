@@ -1,0 +1,629 @@
+/*------------------------------------------------------------------
+Theme Name: SHARP
+Author URI: http://www.begonia.tw/
+Description: Index Layout
+Author: Begonia Design, Inc.
+------------------------------------------------------------------*/
+@charset "utf-8";
+/*------------------------------------------------------------------
+Main Layout
+------------------------------------------------------------------*/
+
+.contain{
+	  padding-bottom: 30px;
+}
+/*///////////////////////index//////////////////////////*/
+.mainvision img{
+	width: 100%;
+}
+/*最新左*/
+.orbit-container{
+	width: 93%;
+}
+.orbit-container .orbit-timer{
+	display: none;
+}
+.orbit-bullets li{
+	width: 16px;
+  	height: 16px;
+	background: url(../images/icon/icon01.png) left 0 no-repeat;
+	margin-top: 10px;
+}
+.orbit-bullets li.active {
+	background: url(../images/icon/icon01.png) right 0 no-repeat;
+}
+.orbit-container .orbit-slides-container img{
+  	border: 1px solid #c6c6c6;
+}
+/*最新右*/
+.news_text .side-nav li a{
+	font-size: 16px;
+	color:#646363;
+	padding: 0;
+    line-height: 40px;
+    border-bottom: 1px dotted #C0C0C0;
+}
+.news_text .side-nav  li a span{
+	color: #64b4cc;
+    padding: 0 10px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+/*物件*/
+li.room-card{
+	
+}
+li.room-card>a{
+	position: relative;
+	display: block;
+  	background-color: #fff;
+	border:1px solid #d6d6d6;
+	outline: 0px solid rgba(0, 0, 0, 0.11);
+	transition:.5s;
+}
+li.room-card>a:hover{
+	outline: 6px solid rgba(0, 0, 0, 0.11);
+}
+li.room-card>a img{
+	padding:3px;
+}
+li.room-card span.txt{
+	display: block;
+	padding:8px 12px 16px 12px;
+}
+li.room-card span.txt h5{
+	color:#646363;
+}
+li.room-card span.txt p{
+	color:#949494;
+	margin-bottom: 0;
+}
+li.room-card span.bar{
+	background-color: #f8f8f8;
+	border-top: 1px solid #d6d6d6;
+	width: 100%;
+	display: block;
+	padding: 10px;
+}
+li.room-card span.bar>span,li.room-card span.bar>a{
+	font-size: 16px;
+	color: #747474;
+	font-weight: bolder;
+}
+li.room-card span.bar>span i,li.room-card span.bar>a i{
+	margin-right: 5px;
+}
+li.room-card span.bar>span.R,li.room-card span.bar>a.R{
+	float: right;
+}
+li.room-card span.bar>span.L i,li.room-card span.bar>a.L i{color:#F9A732;}
+li.room-card span.bar>span.R i,li.room-card span.bar>a.R i{color:#61BDD8;}
+li.room-card span.bar>span.R.active i,li.room-card span.bar>a.R.active i{color:#747474;}
+li.room-card span.tag{
+	position: absolute;
+	top: 0;
+	right: 7px;
+	background-color: #F9A732;
+	padding: 1px 6px;
+	color: #fff;
+	line-height: 20px;
+	font-weight: 400;
+	font-size: 14px;
+	text-shadow: 0px 1px #f98b32;
+	box-shadow: 2px 0 #f98b32;
+}
+li.room-card span.tag i{font-size: 14px;}
+li.room-card span.tag:before{
+  content: '';
+  position: absolute;
+  z-index: 3;
+  bottom: -28px;
+  right: 0;
+  border: 14px solid #FFF;
+  border-color: #F9A732 transparent transparent transparent;  
+}
+li.room-card span.tag:after{
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: -28px;
+  right: -2px;
+  border: 14px solid #FFF;
+  border-color: #f98b32 transparent transparent transparent; 	
+}
+.link_banner li a:hover{
+  outline: 1px solid rgba(0, 0, 0, 0.40);
+  display: block;
+}
+/*///////////////////////房東的物件//////////////////////////*/
+.landlord li.room-card{
+	
+}
+.landlord li.room-card>span{
+	position: relative;
+	display: block;
+  	background-color: #fff;
+	border:1px solid #d6d6d6;
+	outline: 0px solid rgba(0, 0, 0, 0.11);
+	transition:.5s;
+}
+/*.landlord li.room-card>a:hover{
+	outline: 6px solid rgba(0, 0, 0, 0.11);
+}*/
+.landlord li.room-card>span img{
+	padding:3px;
+}
+.landlord li.room-card span.txt{
+	display: block;
+	padding:8px 12px 16px 12px;
+}
+.landlord li.room-card span.txt h5{
+	color:#646363;
+}
+.landlord li.room-card span.txt p{
+	color:#949494;
+	margin-bottom: 0;
+}
+.landlord li.room-card span.bar{
+	background-color: #f8f8f8;
+	border-top: 1px solid #d6d6d6;
+	width: 100%;
+	display: block;
+	padding: 10px;
+}
+.landlord li.room-card span.bar>span,.landlord li.room-card span.bar>a{
+	font-size: 16px;
+	color: #747474;
+	font-weight: bolder;
+}
+.landlord li.room-card span.bar>span i,.landlord li.room-card span.bar>a i{
+	margin-right: 5px;
+}
+.landlord li.room-card span.bar>span.R,.landlord li.room-card span.bar>a.R{
+	float: right;
+}
+.landlord li.room-card span.bar>span.L i,.landlord li.room-card span.bar>a.L i{color:#F9A732;}
+.landlord li.room-card span.bar>span.R i,.landlord li.room-card span.bar>a.R i{color:#FFF;}
+.landlord li.room-card span.bar>span.R.active i,.landlord li.room-card span.bar>a.R.active i{color:#747474;}
+.landlord .btn-mini {
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "微軟正黑體", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 0rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;  
+  background-color: #61BDD8;
+  border-color: #007095;
+  color: #FFFFFF;
+  border-radius: 2px;
+  font-size: 1rem;
+  transition: background-color 300ms ease-out; 
+
+  font-size: 14px;
+  box-shadow: 0 1px #5A93A4;
+  padding: 2px 12px;
+}
+.landlord .btn-mini:hover,
+.landlord .btn-mini:focus {
+    background-color: #007095; }
+/*小旗子*/
+.landlord li.room-card span.tag{
+	position: absolute;
+	top: 0;
+	right: 7px;
+	background-color: #F9A732;
+	padding: 1px 6px;
+	color: #fff;
+	line-height: 20px;
+	font-weight: 400;
+	font-size: 14px;
+	text-shadow: 0px 1px #f98b32;
+	box-shadow: 2px 0 #f98b32;
+}
+.landlord li.room-card span.tag i{font-size: 14px;}
+.landlord li.room-card span.tag:before{
+  content: '';
+  position: absolute;
+  z-index: 3;
+  bottom: -28px;
+  right: 0;
+  border: 14px solid #FFF;
+  border-color: #F9A732 transparent transparent transparent;  
+}
+.landlord li.room-card span.tag:after{
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: -28px;
+  right: -2px;
+  border: 14px solid #FFF;
+  border-color: #f98b32 transparent transparent transparent; 	
+}
+/*///////////////////////rent_list//////////////////////////*/
+#rent_list .tabs.tabs-rent_list{
+	margin-top:40px;
+}
+
+#rent_list .tabs-content{
+	/*outline:#000 dashed 1px;*/
+}
+#rent_list .tabs.tabs-rent_list .tab-title{
+	margin-right: 3px;
+}
+
+#rent_list .tabs.tabs-rent_list li.tab-title:last-child{margin-right: 0;}
+#rent_list .tabs.tabs-rent_list .tab-title > a{
+	position: relative;  
+	z-index: 2;
+	padding: 7px 18px;
+	font-weight: bolder;
+ 	color: #D0D0D0;
+ 	border: 1px solid #D0D0D0; 	
+ 	border-radius: 4px 4px 0 0;
+ 	border-bottom: none;
+}
+#rent_list .tabs.tabs-rent_list .tab-title.active a{	
+	color:#61bdd8;	
+}
+#rent_list .tabs.tabs-rent_list .tab-title.active:before{
+	position: absolute;
+	z-index: 3;
+	content: '';
+	width: 100%;
+	height: 3px;
+	bottom:-1px;
+	left:0;
+	border-bottom:3px solid #61bdd8;
+}
+#rent_list .tabs.tabs-rent_list li i{
+		margin-right:8px;
+}
+#rent_list .tabs.tabs-rent_list .tab-title i.fa-home{
+	font-size:26px;
+}
+#rent_list .row.collapse > .columns.search-zone{
+	/*background-color: #666;*/
+	border:1px solid #cccccc;
+	padding: 25px 20px;
+}
+
+#rent_list .result-zone{
+	padding:40px 0 0px 0;
+	/*background-color: #ccc;*/
+}
+
+#rent_list .search-zone .search_input input[type="checkbox"] + label, 
+#rent_list .search-zone .search_input input[type="radio"] + label{
+	margin-left: 0.3rem;
+  	margin-right: 0rem;
+}
+#rent_list .search-zone .search_input label{
+	line-height: 40px;
+}
+#rent_list .search-zone .search_input select,
+#rent_list .search-zone .search_input input[type="text"]{
+	width: 98%;
+	margin-top: 2px;
+}
+#rent_list .search-zone .search_input input[type="radio"]{
+	margin-left: 0.5rem;
+}
+/*切換tab*/
+.tabs_house{
+}
+.tabs_house li.tab-title{
+	float: none;
+ 	display: inline-block;
+ 	width: 49.25%;
+	text-align: center;
+}
+.tabs_house li:first-child{
+	margin-right: 1.5%;
+}
+.tabs_house li.tab-title a{
+    padding: 0rem 1rem;
+    padding: 0;
+  	line-height: 40px;
+  	color:rgba(163, 163, 163, 1);  	 
+  	border: 1px solid rgba(163, 163, 163, 1);
+  	border-radius: 4px;	  	
+  	background-color: #f6f6f6;
+  	font-size: 1rem;
+}
+.tabs_house li.tab-title.active a{
+  	color: #61BDD8;
+  	border: 1px solid #61bdd8;
+  	background-color: #fff; 
+}
+.tabs_house li.tab-title a i{
+	margin-right: 5px;
+}
+/*租賃物件-清單*/
+#house_list ul[class*="block-grid-"]{
+	margin-left: 0;
+  	margin-right: 0;
+  	border-top:1px dashed #E4E4E4;
+}
+#house_list ul[class*="block-grid-"] > li{
+    padding:0;
+}
+#house_list ul[class*="block-grid-"] > li:hover{
+	background-color: #eee;
+}
+#house_list ul[class*="block-grid-"] > li:hover a{
+	color:#61bdd8;
+}
+#house_list ul li a{
+	position: relative;
+	padding-left: 25px;
+	display: block;
+	padding: 10px 20px;
+	border-bottom: 1px dashed #E4E4E4;
+	color:#646363;
+}
+#house_list ul li a i{
+	margin-right: 5px;
+}
+#house_list ul li a:before{
+	/*content: '';
+	position: absolute;	
+	top:0;
+	left:0;
+	width: 20px;
+	height: 20px;
+	background-color: #000;*/
+}
+/*租賃物件-地圖*/
+#house_map .map_wrap {
+    position: relative;
+    width: 100%;
+   	padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid #B6B6B6;
+  	box-shadow: 5px 5px 0px rgba(186, 186, 186, 0.56);
+}
+
+#house_map .map_wrap iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#house_map .map_wrap .loader{
+	 position: absolute;
+	 width: 100%;
+     height: 100%;
+     top:0;
+     left:0;
+	 background: url(../images/loader.gif) center center no-repeat;
+}
+
+/*///////////////////////news_list//////////////////////////*/
+.news_show_box{
+	margin-bottom: 40px;
+}
+.news_show_box h4{
+	font-size: 1.4375rem;
+	font-weight: bold;
+    color: #646363;
+    margin-top: 1rem;
+}
+.news_show_box h4 span{
+	color: #63C2DD;
+    margin: 0 10px 0 0;
+    letter-spacing: 3px;
+}
+.news_show_box p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.news_text .side-nav li a span{
+	padding-left:0;
+}
+.news_list_box{
+	margin-bottom: 20px;
+}
+.page_txt span{
+	color: #61BDD8;
+  	padding: 0 5px;
+}
+.editor_wrap p{
+	font-size: 16px;
+}
+.download_wrap ul li a{
+	color: #646363;
+}
+#news_content .news_show_box h4 span{
+	display: block;
+}
+
+/*最新消息內容頁左邊區塊*/
+/*.news_content_side h4{
+	font-size: 16px;
+ 	margin-top: 0;
+  	margin-bottom: 10px;
+}*/
+.news_page_wrap{
+	margin-bottom: 20px;
+}
+.news_content_side a.news_in_txt{
+	color: #61BDD8;
+	line-height: 32px;
+    display: block;
+}
+.news_content_side a.news_in_txt span{
+	color: #646363;
+	margin-left: 5px;
+	
+}
+/*.news_content_side a.news_in_txt:hover{
+	background-color: #F8F8F8;
+}*/
+.news_content_side a.news_in_txt:hover span{
+	color: #61BDD8;
+}
+/*///////////////////////訪視內容/////////////////////////*/
+.visit_pages p{
+  line-height: 30px;
+  font-size: 16px;
+  color: #4d4d4d;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.visit_img img{
+	border: 1px solid #E0E0E0;
+}
+.i_box{
+	margin-bottom:40px;
+}
+.id_wrap{
+	position: relative;
+  display: inline-block;
+  padding: 10px 40px 10px 30px;
+  background-color: rgba(249, 167, 50, 0.17);
+  border: 1px solid rgba(249, 143, 58, 0.13);
+  border-radius: 4px;
+}
+#id_box .delete i{
+	  position: absolute;
+  top: 14px;
+  right: 8px;
+  color: #F9A732;
+}
+.text-primary label{
+  color: #61BDD8;
+}
+#tabA_box,#tabB_box{
+	padding:15px 0 30px 0;
+}
+#tabA_box,#tabB_box{
+	display: none;
+}
+/*////////////////////////////月曆頁面//////////////////////////*/
+.data_box{
+	display: none;
+}
+/*////////////////////////////物件內容//////////////////////////*/
+.room_styleA{
+	font-size: 20px;
+    padding-right: 20px;
+    padding-left: 5px;
+    font-weight: bolder;
+    color: #FF0028;
+}
+.disabled label{
+	color: #D4D4D4;
+}
+.room_ul{
+    margin-top: 10px;
+}
+.room_ul[class*="block-grid-"] > li{
+	padding: 0 10px 20px 10px;
+}
+.room_ul li a{
+	display: block;
+    border: 3px solid #D6D6D6;
+    /* padding: 3px; */
+}
+.room_ul li a.active{
+	border: 5px solid #f9a732;
+}
+/*////////////////////////////網站地圖//////////////////////////*/
+.row .row.collapse.map_wrap{
+	border: 2px solid #EFEFEF;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px rgba(185, 185, 185, 0.25);
+}
+.map_wrap_L{
+	padding:20px;
+}
+.map_wrap_L span{
+	font-size: 20px;
+    color: #9E9E9E;
+    text-shadow: 0px 0px #B1B1B1;
+    font-weight: bold;
+}
+.map_wrap_L i{
+    font-size: 20px;
+    color: #B4B4B4;
+}
+.row.collapse > .columns.map_wrap_R{
+	padding:20px;
+}
+.map_wrap_R li{
+	list-style-image: url("../images/icon/icon10.png");
+}
+
+/*0827新增*/
+.untabs-content{
+	margin-bottom: 20px;
+    width: 100%;	
+}
+
+/*------------------------------------------------------------------
+Different Width Solution
+------------------------------------------------------------------*/
+@media screen and (max-width: 1920px) {
+
+}
+@media screen and (max-width: 64.063em) {
+	.search-zone .medium-M-T-20{
+		margin-top:15px;
+	}
+	#rent_list .tabs.tabs-rent_list{
+		margin-top:0px;
+	}
+	.tabs_house {
+	  margin-top: 10px;
+	}
+
+	.news_show_box h4{
+		line-height: 2rem;
+		margin: 10px 0;
+	}
+	.news_show_box h4 span{
+		display: block;
+	}
+}
+/*平板取消hover效果*/
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 720px) {
+	.medium-block-grid-3 > li.room-card {
+	  width: 100%;
+	}
+}
+@media screen and (max-width: 40.063em) {
+	#rent_list .tabs.tabs-rent_list .tab-title > a{
+		padding: 7px 9px;
+		font-size: 16px;
+	}
+	#rent_list .tabs-rent_list li i{
+		display: none;
+	}
+	.news_text .side-nav li a{
+		line-height: 26px;
+		padding: 5px 0;
+	}
+	.form-inline .radio_box .row .columns {
+	    padding-right: 0px;
+	    padding-left: 0px;
+	}
+	 .i_box {
+	    margin-bottom: 0px;
+	}
+}
+@media screen and (max-width: 400px) {
+}
+@media screen and (max-width: 320px) {
+}
